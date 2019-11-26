@@ -3,7 +3,7 @@ This repository's purpose is to contain all different version/builds of my 2D Un
 
 # The Quest For Orion's Flower!
 The title for my 2D Unity Project is The Quest for Orion's Flower!.
-You play as Clark, A young man who lives with his family in the woods. His family has lived with a terrible curse for many generations. A curse which power has the ability to turn its recipients into a Tree on their 50th birthday. As Clark's mother is close to her birthday, Clark is determined to find a way to remove the curse from his family. 
+You play as Clark, A young man who lives with his family in the woods. His family has lived with a terrible curse for many generations. A curse which power has the ability to turn its recipients into a Tree on their 50th birthday. As Clark's mother is close to her birthday, Clark is determined to find a way to remove the curse from his family! 
 
 # Trello Board
 This Trello Dashboard will contain all project development information on the project e.g. Asset Implementation, Features, Mechanics, Dates etc. 
