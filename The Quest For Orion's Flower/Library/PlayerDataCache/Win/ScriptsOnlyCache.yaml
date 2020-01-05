@@ -22,7 +22,7 @@ ScriptsOnlyBuild:
     - PauseMenu
     - PlayerButton
     - RangedAttack
-    - SetVolume
+    - SetMusicVolume
     - SmoothFollow2D
     - TopDownCharacterController2D
     - WinScreen
@@ -42,11 +42,14 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -88,35 +91,35 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9802}
+      Script: {instanceID: 9810}
     - Class: 114
-      Script: {instanceID: 10008}
+      Script: {instanceID: 10016}
     - Class: 114
-      Script: {instanceID: 10420}
+      Script: {instanceID: 10428}
     - Class: 114
-      Script: {instanceID: 10442}
+      Script: {instanceID: 10450}
     - Class: 114
-      Script: {instanceID: 10802}
+      Script: {instanceID: 10810}
     - Class: 114
-      Script: {instanceID: 10992}
+      Script: {instanceID: 11000}
     - Class: 114
-      Script: {instanceID: 11044}
+      Script: {instanceID: 11052}
     - Class: 114
-      Script: {instanceID: 11060}
+      Script: {instanceID: 11068}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 11326}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11520}
     - Class: 114
-      Script: {instanceID: 11626}
+      Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 11664}
+      Script: {instanceID: 11672}
     - Class: 114
-      Script: {instanceID: 11728}
+      Script: {instanceID: 11736}
     - Class: 114
-      Script: {instanceID: 11764}
+      Script: {instanceID: 11772}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -179,73 +182,73 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 718}
+      Script: {instanceID: 726}
     - Class: 114
-      Script: {instanceID: 9802}
+      Script: {instanceID: 9810}
     - Class: 114
-      Script: {instanceID: 9870}
+      Script: {instanceID: 9878}
     - Class: 114
-      Script: {instanceID: 10008}
+      Script: {instanceID: 10016}
     - Class: 114
-      Script: {instanceID: 10022}
+      Script: {instanceID: 10030}
     - Class: 114
-      Script: {instanceID: 10116}
+      Script: {instanceID: 10124}
     - Class: 114
-      Script: {instanceID: 10146}
+      Script: {instanceID: 10154}
     - Class: 114
-      Script: {instanceID: 10150}
+      Script: {instanceID: 10158}
     - Class: 114
-      Script: {instanceID: 10170}
+      Script: {instanceID: 10178}
     - Class: 114
-      Script: {instanceID: 10420}
+      Script: {instanceID: 10428}
     - Class: 114
-      Script: {instanceID: 10734}
+      Script: {instanceID: 10742}
     - Class: 114
-      Script: {instanceID: 10738}
+      Script: {instanceID: 10746}
     - Class: 114
-      Script: {instanceID: 10802}
+      Script: {instanceID: 10810}
     - Class: 114
-      Script: {instanceID: 10844}
+      Script: {instanceID: 10852}
     - Class: 114
-      Script: {instanceID: 10846}
+      Script: {instanceID: 10854}
     - Class: 114
-      Script: {instanceID: 10870}
+      Script: {instanceID: 10878}
     - Class: 114
-      Script: {instanceID: 10876}
+      Script: {instanceID: 10884}
     - Class: 114
-      Script: {instanceID: 10968}
+      Script: {instanceID: 10976}
     - Class: 114
-      Script: {instanceID: 10992}
+      Script: {instanceID: 11000}
     - Class: 114
-      Script: {instanceID: 11044}
+      Script: {instanceID: 11052}
     - Class: 114
-      Script: {instanceID: 11054}
+      Script: {instanceID: 11062}
     - Class: 114
-      Script: {instanceID: 11122}
+      Script: {instanceID: 11130}
     - Class: 114
-      Script: {instanceID: 11136}
+      Script: {instanceID: 11144}
     - Class: 114
-      Script: {instanceID: 11138}
+      Script: {instanceID: 11146}
     - Class: 114
-      Script: {instanceID: 11168}
+      Script: {instanceID: 11176}
     - Class: 114
-      Script: {instanceID: 11190}
+      Script: {instanceID: 11198}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 11286}
+      Script: {instanceID: 11294}
     - Class: 114
-      Script: {instanceID: 11326}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11364}
+      Script: {instanceID: 11372}
     - Class: 114
-      Script: {instanceID: 11428}
-    - Class: 114
-      Script: {instanceID: 11728}
+      Script: {instanceID: 11436}
     - Class: 114
       Script: {instanceID: 11736}
     - Class: 114
-      Script: {instanceID: 11764}
+      Script: {instanceID: 11744}
+    - Class: 114
+      Script: {instanceID: 11772}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -401,7 +404,7 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
-      Hash: 5c076646c07137eb56afee55a7d0d8b5
+      Hash: b9d17d69d0448a29bb25be642f4bd80f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WinScreen
@@ -665,10 +668,10 @@ ScriptsOnlyBuild:
     className: ButtonSound
   - hash:
       serializedVersion: 2
-      Hash: 2122ad77b35f7f0129bab21633be2a24
+      Hash: a5f58ed0e375afcb600294bc0c276a95
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SetVolume
+    className: SetMusicVolume
   - hash:
       serializedVersion: 2
       Hash: 11319334e5365797f8056694f9b5dae4
@@ -1051,5 +1054,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/OrionFlower.unity
-  playerPath: C:/Users/Caleb Long/Desktop/The Quest For Orion's Flower (Alpha Build
-    2)/TheQuestForOrionsFlower.exe
+  playerPath: C:/Users/Caleb Long/Desktop/The Quest For Orion's Flower (ALPHA BUILD))/TheQuestForOrionsFlower.exe

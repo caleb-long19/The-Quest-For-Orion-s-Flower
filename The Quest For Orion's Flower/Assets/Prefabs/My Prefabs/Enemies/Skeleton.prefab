@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 1427799184666964861}
   - component: {fileID: 8809147625838148292}
   - component: {fileID: 6644467747707267951}
+  - component: {fileID: 2600502643920511596}
   - component: {fileID: 1427799184666964857}
   - component: {fileID: 1427799184666964856}
-  - component: {fileID: 2600502643920511596}
-  - component: {fileID: 3787644157942466925}
   m_Layer: 8
   m_Name: Skeleton
   m_TagString: Enemy
@@ -127,7 +126,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!61 &6644467747707267951
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -141,10 +140,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.001727663, y: 0.18080457}
+  m_Offset: {x: -0.0009653196, y: 0.080726564}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.3284416}
+    pivot: {x: 0.5, y: 0.3858274}
     oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
@@ -152,40 +151,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.24026434, y: 0.38239536}
+  m_Size: {x: 0.18080632, y: 0.39391458}
   m_EdgeRadius: 0
---- !u!114 &1427799184666964857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427799184666964860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7913b4aba8219740bd26d4654b21b68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyHealth: 30
-  EnemySpeed: 2.5
-  MinEnemyRange: 0
-  MaxEnemyRange: 7
-  Blood: {fileID: 2541331030509968183, guid: 2ae4d24c791878c4dbf75083c1033954, type: 3}
-  Hurt: {fileID: 8300000, guid: bbc499435db89934c900718c2b1c1cd2, type: 3}
---- !u!114 &1427799184666964856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427799184666964860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fab4c2b1c8e07d4c99d5abb03ca559f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 5
-  resetTime: 0.5
 --- !u!82 &2600502643920511596
 AudioSource:
   m_ObjectHideFlags: 0
@@ -282,99 +249,35 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &3787644157942466925
-AudioSource:
+--- !u!114 &1427799184666964857
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427799184666964860}
   m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 02b6ab90457c6fe45822c96dc15b2bed, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.1
-  m_Pitch: 0.5
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7913b4aba8219740bd26d4654b21b68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyHealth: 30
+  EnemySpeed: 3
+  MinEnemyRange: 0
+  MaxEnemyRange: 7
+  Blood: {fileID: 2541331030509968183, guid: 2ae4d24c791878c4dbf75083c1033954, type: 3}
+  Hurt: {fileID: 8300000, guid: bbc499435db89934c900718c2b1c1cd2, type: 3}
+--- !u!114 &1427799184666964856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427799184666964860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fab4c2b1c8e07d4c99d5abb03ca559f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  resetTime: 0.5

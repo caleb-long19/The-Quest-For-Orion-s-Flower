@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 4581204024177095261}
   - component: {fileID: 4581204024177095250}
   - component: {fileID: 4581204024177095251}
-  - component: {fileID: 4354513324079171858}
+  - component: {fileID: 6377163821363285919}
   - component: {fileID: 4581204024177095249}
   - component: {fileID: 4581204024177095248}
   - component: {fileID: 7104710357834295515}
@@ -266,7 +266,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &4354513324079171858
+--- !u!61 &6377163821363285919
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -279,7 +279,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0008425042, y: -0.06403382}
+  m_Offset: {x: 0.0016487762, y: -0.020168632}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.3858274}
@@ -290,7 +290,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14135747, y: 0.14120498}
+  m_Size: {x: 0.14556877, y: 0.23180893}
   m_EdgeRadius: 0
 --- !u!61 &4581204024177095249
 BoxCollider2D:
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4685f0cb483c834689b02ec09e10b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Keys: {fileID: 0}
+  Keys: {fileID: 8300000, guid: 991bb9b7f362d4d40b3aa9f127e26fb6, type: 3}
   OrbPickup: {fileID: 0}
   Pickup: {fileID: 0}
 --- !u!114 &4581204024177095256
@@ -396,7 +396,8 @@ AudioSource:
   m_GameObject: {fileID: 4581204024177095254}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 158aae40b8857044da758fabfdcd9408,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fe7c385f07785e47b39715f14da773e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1

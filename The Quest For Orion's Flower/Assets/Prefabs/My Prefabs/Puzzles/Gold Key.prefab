@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2096762703
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b3537523b6a5b874bbf46529e889b577, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -124,7 +124,7 @@ MonoBehaviour:
   LockedDoor: {fileID: 0}
   OpenDoor: {fileID: 0}
   GoldKey: {fileID: 7371216072374564275}
-  Key: {fileID: 8300000, guid: 3a3c4cfaed91dd746a75ba43d9dbd629, type: 3}
+  Key: {fileID: 8300000, guid: 991bb9b7f362d4d40b3aa9f127e26fb6, type: 3}
 --- !u!82 &5811911241728551535
 AudioSource:
   m_ObjectHideFlags: 0
@@ -134,8 +134,9 @@ AudioSource:
   m_GameObject: {fileID: 7371216072374564275}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3a3c4cfaed91dd746a75ba43d9dbd629, type: 3}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 158aae40b8857044da758fabfdcd9408,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 991bb9b7f362d4d40b3aa9f127e26fb6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1.5
