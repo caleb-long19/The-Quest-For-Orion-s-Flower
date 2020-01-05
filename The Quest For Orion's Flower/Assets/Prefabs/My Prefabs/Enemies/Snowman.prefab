@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -828691031
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 74988ad9ac8d87f478880e803c0beef9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7913b4aba8219740bd26d4654b21b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHp: 20
+  EnemyHealth: 20
   EnemySpeed: 2.5
   MinEnemyRange: 0
   MaxEnemyRange: 6
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 8
-  resetTime: 0.2
+  resetTime: 0.25
 --- !u!61 &5012261001792697546
 BoxCollider2D:
   m_ObjectHideFlags: 0

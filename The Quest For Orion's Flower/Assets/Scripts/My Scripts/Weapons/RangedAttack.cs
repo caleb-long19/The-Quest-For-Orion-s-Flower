@@ -4,42 +4,33 @@ using UnityEngine;
 
 public class RangedAttack : MonoBehaviour
 {
-    //Bow Variables
-    public GameObject arrowPrefab;
-    public Transform player;
-    public Transform arrowSpawn;
-    public float fireTime = 0.5f;
-    private bool isFiring = false;
-    public AudioClip Bow;
-    public Rigidbody2D arrow;
+    public GameObject Blood; // Blood particles for enemy
+    public int damage = 5;
 
-    private void Start()
+    public float arrowSpeed;
+    public Rigidbody2D myRigidbody2D;
+
+
+    public void Setup(Vector2 velocity, Vector3 direction)
     {
-        arrow = GetComponent<Rigidbody2D>();
+        myRigidbody2D.velocity = velocity.normalized * arrowSpeed;
+        transform.rotation = Quaternion.Euler(direction);
     }
 
-    void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (Input.GetMouseButton(1) && KeyPickup.BowPickup == true && Ammo.ammo >= 1)
-        {
-            if (!isFiring)
-            {
-                Fire();
-                Ammo.ammo -= 1;
-                AudioSource.PlayClipAtPoint(Bow, this.gameObject.transform.position);
-            }
-        }
+        other.transform.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
+        Die();
     }
 
-    private void SetFiring()
+    private void OnBecameInvisible()
     {
-        isFiring = false;
+        Die();
     }
 
-    private void Fire()
+    private void Die()
     {
-        isFiring = true;
-        Instantiate(arrowPrefab, arrowSpawn.position, arrowSpawn.rotation);
-        Invoke("SetFiring", fireTime);
+        Destroy(gameObject);
     }
+
 }

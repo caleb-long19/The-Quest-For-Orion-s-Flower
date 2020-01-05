@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerButton : MonoBehaviour
 {
     public GameObject Barrier;
-    public new AudioClip audio;
+    public AudioClip ButtonPressPlayer;
 
     public Animator ButtonAnimationController;
 
@@ -13,9 +13,10 @@ public class PlayerButton : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            Destroy(Barrier);
-            AudioSource.PlayClipAtPoint(audio, this.gameObject.transform.position);
             ButtonAnimationController.SetTrigger("isPressed"); // If the player collides with the button, switch button to isPressed in the Animator
+            AudioSource.PlayClipAtPoint(ButtonPressPlayer, this.gameObject.transform.position); // Play Button Sound Effect
+            Destroy(Barrier); // Destroy Stone Barrier
+
             Debug.Log("Player Button has been Pressed");
         }
     }

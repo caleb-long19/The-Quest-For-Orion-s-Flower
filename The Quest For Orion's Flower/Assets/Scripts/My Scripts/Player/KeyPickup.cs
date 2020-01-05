@@ -4,31 +4,41 @@ using UnityEngine;
 
 public class KeyPickup : MonoBehaviour
 {
+    // Temple Key Bools
     public static bool ForestKey;
     public static bool FrostKey;
     public static bool DesertKey;
 
+    // Temple Orb Bools
     public static bool ForestOrb;
     public static bool FrostOrb;
     public static bool DesertOrb;
+    public static bool AllOrbs;
     public static bool OrionFlower;
 
+    // Weapon Pickup Bools
     public static bool BowPickup;
     public static bool SwordPickup;
 
-    public static bool AllOrbs;
+    //Unity References
     public AudioClip Keys;
     public AudioClip OrbPickup;
     public AudioClip Pickup;
 
-    public void Start()
+    public void Start() // Set all bools to False on Start
     {
         ForestKey = false;
         FrostKey = false;
         DesertKey = false;
 
+        ForestOrb = false;
+        FrostOrb = false;
+        DesertOrb = false;
+        AllOrbs = false;
+
         SwordPickup = false;
         BowPickup = false;
+
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -52,7 +62,7 @@ public class KeyPickup : MonoBehaviour
             AudioSource.PlayClipAtPoint(Keys, this.gameObject.transform.position);
             DesertKey = true;
             Destroy(GameObject.FindWithTag("DesertKey"));
-        }
+        } // When Player collides with Temple Keys, Remove object, Temple Key Bools are set to True, Play sound effect!
 
 
         if (collision.gameObject.tag.Equals("ForestOrb"))
@@ -81,21 +91,21 @@ public class KeyPickup : MonoBehaviour
             AudioSource.PlayClipAtPoint(OrbPickup, this.gameObject.transform.position);
             OrionFlower = true;
             Destroy(GameObject.FindWithTag("OrionFlower"));
-        }
+        } // When Player collides with Temple Orbs, Remove object, Temple Orb Bools are set to True, Play sound effect!
 
         if (collision.tag == "Sword")
         {
-            AudioSource.PlayClipAtPoint(Pickup, this.gameObject.transform.position);
-            SwordPickup = true;
-            Destroy(GameObject.FindWithTag("Sword"));
+            AudioSource.PlayClipAtPoint(Pickup, this.gameObject.transform.position); // When Player collides with Sword, Play sound effect
+            SwordPickup = true; // SwordPickup bool is set to true
+            Destroy(GameObject.FindWithTag("Sword")); // Destroy Sword gameObject
         }
 
 
         if (collision.tag == "Bow")
         {
-            AudioSource.PlayClipAtPoint(Pickup, this.gameObject.transform.position);
-            BowPickup = true;
-            Destroy(GameObject.FindWithTag("Bow"));
+            AudioSource.PlayClipAtPoint(Pickup, this.gameObject.transform.position); // When Player collides with Bow, Play sound effect
+            BowPickup = true; // BowPickup bool is set to true
+            Destroy(GameObject.FindWithTag("Bow")); // Destroy Bow gameObject
         }
     }
 
@@ -103,7 +113,7 @@ public class KeyPickup : MonoBehaviour
     {
         if (ForestOrb == true && FrostOrb == true && DesertOrb == true)
         {
-            AllOrbs = true;
+            AllOrbs = true; // If all Forest Orb bools are equal to True, AllOrbs bool is equal to True
         }
     }
 

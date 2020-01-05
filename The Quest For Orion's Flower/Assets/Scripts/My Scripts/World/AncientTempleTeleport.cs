@@ -7,17 +7,11 @@ public class AncientTempleTeleport : MonoBehaviour
     public GameObject Teleporter;
     public GameObject Player;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (other.gameObject.tag == "Player" && KeyPickup.AllOrbs == true)
+        if (Input.GetKey(KeyCode.Space) & collision.gameObject.tag == "Player" && KeyPickup.AllOrbs == true)
         {
-            StartCoroutine(Teleport());
+            Player.transform.position = new Vector2(Teleporter.transform.position.x, Teleporter.transform.position.y); // If Player Collides with Ancient Temple and has Collected all Orbs, Teleport Player
         }
-    }
-
-    IEnumerator Teleport()
-    {
-        yield return new WaitForSeconds(1);
-        Player.transform.position = new Vector2(Teleporter.transform.position.x, Teleporter.transform.position.y);
     }
 }

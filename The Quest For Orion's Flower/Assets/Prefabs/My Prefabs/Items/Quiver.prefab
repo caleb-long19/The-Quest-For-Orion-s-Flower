@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e568f929fbefcf344b36567e5fb3e5a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 8300000, guid: 147a279f033481348b1778d25eedc03c, type: 3}
+  AmmoPickup: {fileID: 8300000, guid: 147a279f033481348b1778d25eedc03c, type: 3}
 --- !u!82 &3272712191147816571
 AudioSource:
   m_ObjectHideFlags: 0

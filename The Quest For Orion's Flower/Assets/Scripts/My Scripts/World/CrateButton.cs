@@ -13,15 +13,16 @@ public class CrateButton : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Crate"))
         {
-            Barrier.SetActive(false);
-            ButtonAnimationController.SetTrigger("isPressed"); // If the player collides with the button, switch button to isPressed in the Animator
+            Barrier.SetActive(false); // Barrier GameObject is set to Inactive
+            ButtonAnimationController.SetTrigger("isPressed"); // If the Crate collides with the button, switch button to isPressed in the Animator
+
             Debug.Log("Crate Button has been Pressed");
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-            Barrier.SetActive(true);
-            ButtonAnimationController.SetTrigger("isNotPressed");
+        Barrier.SetActive(true); // Barrier GameObject is set to active
+        ButtonAnimationController.SetTrigger("isNotPressed"); // If the Crate isn't colliding with the button, switch button to isNotPressed in the Animator
     }
 }

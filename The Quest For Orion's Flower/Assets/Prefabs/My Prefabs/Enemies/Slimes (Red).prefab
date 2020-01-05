@@ -166,8 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7913b4aba8219740bd26d4654b21b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHp: 15
-  EnemySpeed: 2.5
+  EnemyHealth: 15
+  EnemySpeed: 1.5
   MinEnemyRange: 0
   MaxEnemyRange: 4
   Blood: {fileID: 2541331030509968183, guid: 2ae4d24c791878c4dbf75083c1033954, type: 3}
@@ -184,8 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fab4c2b1c8e07d4c99d5abb03ca559f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
-  resetTime: 0.2
+  damage: 3
+  resetTime: 1
 --- !u!82 &4351688418186990468
 AudioSource:
   m_ObjectHideFlags: 0

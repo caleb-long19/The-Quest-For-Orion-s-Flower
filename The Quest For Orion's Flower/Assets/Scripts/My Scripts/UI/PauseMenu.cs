@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject PauseScreen;
     public GameObject SettingsScreen;
+    public GameObject ControlsScreen;
 
     private bool paused = false; // boolean set for pause menu
 
@@ -35,7 +36,7 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 1; // The time in game is back to normal when game is not paused
         }
 
-        if(SettingsScreen.activeInHierarchy)
+        if(SettingsScreen.activeInHierarchy || ControlsScreen.activeInHierarchy)
         {
             if (PauseScreen.activeInHierarchy)
             {
@@ -47,23 +48,24 @@ public class PauseMenu : MonoBehaviour
             {
                 PauseScreen.SetActive(false);
                 SettingsScreen.SetActive(false);
+                ControlsScreen.SetActive(false);
             }
         }
     }
 
     public void Resume()
     {
-        paused = false; // when the resume button is pressed, pause menu is false
+        paused = false; // When the Resume Button is pressed, Pause Menu is False
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // when the restart button is pressed, reload current level
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // When the Restart Button is pressed, reload current level
     }
 
     public void Exit()
     {
-        SceneManager.LoadScene("MainMenu"); // when exit is pressed, close down game
+        SceneManager.LoadScene("MainMenu"); // When Exit Button is pressed, Exit to main menu
         Debug.Log("You have quit the game!");
     }
 }

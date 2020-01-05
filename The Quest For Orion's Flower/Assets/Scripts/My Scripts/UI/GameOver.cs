@@ -2,38 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameOver : MonoBehaviour
 {
     public GameObject DeathScreen; // Attatch gameObject called DeathMenu in unity
+    public TextMeshProUGUI scoreText;
 
     private void Start()
     {
-        DeathScreen.SetActive(false); // When the game starts, the pause menu is not displayed
+        DeathScreen.SetActive(false); // When Game Begins, Death Screen UI is disabled
     }
 
     private void Update()
     {
-
-        if (HealthSystem.currentHP <= 0)
+        if (HealthSystem.health <= 0)
         {
-            DeathScreen.SetActive(true); // When player health is equal to 0, DeathMenu is true
+            DeathScreen.SetActive(true); // When player health is equal to 0, DeathScreen is true
+            scoreText.text = "SCORE: " + Coin.score.ToString(); // Score Counter Text is equal to Integer Score
         }
 
-        if (HealthSystem.currentHP >= 1)
+        if (HealthSystem.health >= 1)
         {
-            DeathScreen.SetActive(false); // When player health is equal to >=1, DeathMenu is false
+            DeathScreen.SetActive(false); // When player health is equal to >=1, DeathScreen is false
         }
+
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // when the restart button is pressed, reload current level
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // When Restart Button is Selected, Reload Scene
+        HealthSystem.health = 100;
+        HealthSystem.shield = 50;
     }
 
     public void Exit()
     {
-        SceneManager.LoadScene("MainMenu"); // when exit is pressed, close down game
+        SceneManager.LoadScene("MainMenu"); // When Exit Button is pressed, Exit to Main Menu Sceen
         Debug.Log("You have quit the game!");
+        HealthSystem.health = 100;
+        HealthSystem.shield = 50;
     }
 }

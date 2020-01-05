@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Orb : MonoBehaviour
 {
-    public GameObject MagicOrb;
+    public GameObject TempleOrb;
     public GameObject TempleBoss;
 
     private void Start()
     {
         if (TempleBoss != null)
         {
-            MagicOrb.SetActive(false);
+            TempleOrb.SetActive(false); // If Temple Boss isn't dead, Temple Orb is equal to false
         }
     }
 
@@ -19,8 +19,9 @@ public class Orb : MonoBehaviour
     {
         if (TempleBoss == null)
         {
+            TempleOrb.SetActive(true); // If Temple Boss is dead, Temple Orb is equal to true
+
             Debug.Log("Slime King Is Dead!");
-            MagicOrb.SetActive(true);
         }
     }
 }

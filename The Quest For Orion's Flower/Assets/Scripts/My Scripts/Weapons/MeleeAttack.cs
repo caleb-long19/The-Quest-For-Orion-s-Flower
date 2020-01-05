@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MeleeAttack : MonoBehaviour
 {
-    public static int damage = 10;
+    public static int damage = 10; // Sword Attack Damage
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,7 +12,7 @@ public class MeleeAttack : MonoBehaviour
         {
             EnemyAI EnemyHealth;
             EnemyHealth = collision.gameObject.GetComponent<EnemyAI>();
-            EnemyHealth.TakeDamage(damage);
+            EnemyHealth.TakeDamage(damage); // If collision tag is equal to Enemy, Enemy takes damage!
         }
     }
 

@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -828691031
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: -3026856526730679034, guid: d28d5655cb561474ba84471dff9442bd,
     type: 3}
@@ -141,7 +141,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.001727663, y: 0.2702077}
+  m_Offset: {x: -0.001727663, y: 0.18080457}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.3284416}
@@ -152,7 +152,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.24026434, y: 0.5612017}
+  m_Size: {x: 0.24026434, y: 0.38239536}
   m_EdgeRadius: 0
 --- !u!114 &1427799184666964857
 MonoBehaviour:
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7913b4aba8219740bd26d4654b21b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHp: 30
+  EnemyHealth: 30
   EnemySpeed: 2.5
   MinEnemyRange: 0
   MaxEnemyRange: 7
@@ -184,8 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fab4c2b1c8e07d4c99d5abb03ca559f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  resetTime: 0.2
+  damage: 5
+  resetTime: 0.5
 --- !u!82 &2600502643920511596
 AudioSource:
   m_ObjectHideFlags: 0

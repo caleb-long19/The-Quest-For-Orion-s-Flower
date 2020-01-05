@@ -8,7 +8,6 @@ TagManager:
   - Shield
   - DadNPC
   - MumNPC
-  - Snowman
   - Sword
   - ForestKey
   - FrostKey
@@ -31,8 +30,8 @@ TagManager:
   - 
   - 
   - Enemy
-  - 
-  - 
+  - Arrow
+  - Player
   - 
   - 
   - 
@@ -76,6 +75,9 @@ TagManager:
   - name: Button
     uniqueID: 3451564729
     locked: 0
+  - name: Arrows
+    uniqueID: 4017542783
+    locked: 0
   - name: Player
     uniqueID: 4271315517
     locked: 0
@@ -84,12 +86,6 @@ TagManager:
     locked: 0
   - name: Objects
     uniqueID: 3466276265
-    locked: 0
-  - name: FX
-    uniqueID: 4002623761
-    locked: 0
-  - name: Arrows
-    uniqueID: 4017542783
     locked: 0
   - name: Foreground
     uniqueID: 1792399531

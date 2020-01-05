@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2096762703
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 5522397121026081838, guid: c62d9992730035248bab8a6a0dcab37a,
     type: 3}
@@ -114,7 +114,7 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -178,8 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98b1fa9916876c4082ea4b0f7d6ec6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 10
-  audio: {fileID: 8300000, guid: d1f4b5de3dd9cf043a30b3c9123973a0, type: 3}
+  CoinPickup: {fileID: 8300000, guid: d1f4b5de3dd9cf043a30b3c9123973a0, type: 3}
 --- !u!82 &4677058433141965898
 AudioSource:
   m_ObjectHideFlags: 0
@@ -192,7 +191,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d1f4b5de3dd9cf043a30b3c9123973a0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.01
+  m_Volume: 0.0001
   m_Pitch: 1
   Loop: 0
   Mute: 0

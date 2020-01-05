@@ -24,7 +24,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2019_2_3;UNITY_2019_2;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_2_3;UNITY_2019_2;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -62,31 +62,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\AddScore.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\Bullet.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\DestroyOnDie.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\GameUI.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\HurtTrigger.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\MouseSmoothLook2D.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\PoolManager.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\SmoothFollow2D.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\SmoothLookAtTarget2D.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\Spawner.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\TimerEvent.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\TopDownCharacterController2D.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\Weapon.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Enemy\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\Enemy\HurtTrigger.cs" />
     <Compile Include="Assets\Scripts\My Scripts\NPC\Dialog.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Player\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Player\KeyPickup.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\Player\TopDownCharacterController2D.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Player\WinScreen.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\UI\GameManager.cs" />
     <Compile Include="Assets\Scripts\My Scripts\UI\GameOver.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\UI\GameUI.cs" />
     <Compile Include="Assets\Scripts\My Scripts\UI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Weapons\Ammo.cs" />
-    <Compile Include="Assets\Scripts\My Scripts\Weapons\ArrowDamage.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Weapons\MeleeAttack.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Weapons\RangedAttack.cs" />
     <Compile Include="Assets\Scripts\My Scripts\World\AncientTempleTeleport.cs" />
@@ -100,6 +87,7 @@
     <Compile Include="Assets\Scripts\My Scripts\World\Orb.cs" />
     <Compile Include="Assets\Scripts\My Scripts\World\PlayerButton.cs" />
     <Compile Include="Assets\Scripts\My Scripts\World\SetVolume.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\World\SmoothFollow2D.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -155,37 +143,37 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/University Work/Soft 166 - Programme Introduction and Development Workshops/Unity Project Location/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Caleb Long/Downloads/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/University Work/Soft 166 - Programme Introduction and Development Workshops/Unity Project Location/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Caleb Long/Downloads/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/University Work/Soft 166 - Programme Introduction and Development Workshops/Unity Project Location/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Caleb Long/Downloads/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/University Work/Soft 166 - Programme Introduction and Development Workshops/Unity Project Location/TheQuestForOrionsFlower/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Caleb Long/Downloads/TheQuestForOrionsFlower/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/University Work/Soft 166 - Programme Introduction and Development Workshops/Unity Project Location/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Caleb Long/Downloads/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/University Work/Soft 166 - Programme Introduction and Development Workshops/Unity Project Location/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Caleb Long/Downloads/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/University Work/Soft 166 - Programme Introduction and Development Workshops/Unity Project Location/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Caleb Long/Downloads/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/University Work/Soft 166 - Programme Introduction and Development Workshops/Unity Project Location/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/Caleb Long/Downloads/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>D:/University Work/Soft 166 - Programme Introduction and Development Workshops/Unity Project Location/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/Caleb Long/Downloads/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/University Work/Soft 166 - Programme Introduction and Development Workshops/Unity Project Location/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Caleb Long/Downloads/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/University Work/Soft 166 - Programme Introduction and Development Workshops/Unity Project Location/TheQuestForOrionsFlower/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Caleb Long/Downloads/TheQuestForOrionsFlower/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

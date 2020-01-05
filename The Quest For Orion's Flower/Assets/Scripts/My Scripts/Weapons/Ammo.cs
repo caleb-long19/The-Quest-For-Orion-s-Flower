@@ -4,30 +4,21 @@ using UnityEngine;
 
 public class Ammo : MonoBehaviour
 {
-    public delegate void SendAmmo(int theAmmo);
-    public static event SendAmmo OnSendAmmo;
-
-    public new AudioClip audio;
-
+    //Integers
     public static int ammo = 0;
+
+    //Unity References
+    public AudioClip AmmoPickup;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
 
         if (other.gameObject.tag.Equals("Player")) //If "Player" collides with coin add 20 points and destroy object
         {
-            AudioSource.PlayClipAtPoint(audio, this.gameObject.transform.position);
-            ammo += 5; // Every coin pickup equals to 20 points
+            AudioSource.PlayClipAtPoint(AmmoPickup, this.gameObject.transform.position); // Play audio clip when Player Collides
+            ammo += 5; // When Player Collides with Ammo, add to Ammo Counter
             Debug.Log("Player Has Collided!");
-            Destroy(gameObject);
-        }
-    }
-
-    private void OnDestroy()
-    {
-        if (OnSendAmmo != null)
-        {
-            OnSendAmmo(ammo);
+            Destroy(gameObject); // Destroy object when Player Collides
         }
     }
 }
