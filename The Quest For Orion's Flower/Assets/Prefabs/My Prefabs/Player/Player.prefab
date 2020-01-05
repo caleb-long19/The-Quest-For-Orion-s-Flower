@@ -234,6 +234,12 @@ MonoBehaviour:
   playerAnim: {fileID: 4581204024177095250}
   attackDistanceX: 1
   attackDistanceY: 1
+  Pickup: {fileID: 0}
+  Bow: {fileID: 0}
+  Blood: {fileID: 2541331030509968183, guid: 2ae4d24c791878c4dbf75083c1033954, type: 3}
+  arrowPrefab: {fileID: 0}
+  arrowSpawn: {fileID: 0}
+  fireTime: 0.5
 --- !u!114 &7104710357834295515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,6 +252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4685f0cb483c834689b02ec09e10b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Keys: {fileID: 0}
+  OrbPickup: {fileID: 0}
 --- !u!114 &4581204024177095256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +278,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  audio: {fileID: 8300000, guid: 147a279f033481348b1778d25eedc03c, type: 3}
 --- !u!114 &5079434100102885872
 MonoBehaviour:
   m_ObjectHideFlags: 0

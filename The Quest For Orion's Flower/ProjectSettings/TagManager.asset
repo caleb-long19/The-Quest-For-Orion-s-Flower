@@ -17,6 +17,8 @@ TagManager:
   - FrostOrb
   - DesertOrb
   - Crate
+  - Bow
+  - OrionFlower
   layers:
   - Default
   - TransparentFX

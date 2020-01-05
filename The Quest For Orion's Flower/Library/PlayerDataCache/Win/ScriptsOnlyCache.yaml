@@ -1,7 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Ammo
     - AncientTempleTeleport
+    - ArrowDamage
     - Coin
     - CrateButton
     - DesertTempleTeleport
@@ -15,11 +17,12 @@ ScriptsOnlyBuild:
     - HurtTrigger
     - KeyPickup
     - LockedDoors
-    - MeleeAttack
     - Orb
     - PauseMenu
     - Player
+    - PlayerAttack
     - PlayerButton
+    - SetVolume
     - SmoothFollow2D
     - TopDownCharacterController2D
     Unity.2D.Tilemap.Editor.dll:
@@ -46,7 +49,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -79,6 +81,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -96,11 +102,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10332}
     - Class: 114
-      Script: {instanceID: 10700}
+      Script: {instanceID: 10698}
     - Class: 114
-      Script: {instanceID: 10936}
+      Script: {instanceID: 10934}
     - Class: 114
-      Script: {instanceID: 10952}
+      Script: {instanceID: 10950}
     - Class: 114
       Script: {instanceID: 11150}
     - Class: 114
@@ -115,6 +121,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11622}
     - Class: 114
       Script: {instanceID: 11660}
+    - Class: 114
+      Script: {instanceID: 351716}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -128,6 +136,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
     - Class: 328
       Script: {instanceID: 0}
@@ -157,6 +171,10 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -189,17 +207,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10644}
     - Class: 114
-      Script: {instanceID: 10700}
+      Script: {instanceID: 10698}
     - Class: 114
-      Script: {instanceID: 10742}
+      Script: {instanceID: 10740}
     - Class: 114
-      Script: {instanceID: 10766}
+      Script: {instanceID: 10764}
     - Class: 114
-      Script: {instanceID: 10862}
+      Script: {instanceID: 10860}
     - Class: 114
-      Script: {instanceID: 10936}
+      Script: {instanceID: 10934}
     - Class: 114
-      Script: {instanceID: 10946}
+      Script: {instanceID: 10944}
+    - Class: 114
+      Script: {instanceID: 11012}
     - Class: 114
       Script: {instanceID: 11026}
     - Class: 114
@@ -225,7 +245,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11660}
     - Class: 114
-      Script: {instanceID: 547826}
+      Script: {instanceID: 36192}
+    - Class: 114
+      Script: {instanceID: 157004}
+    - Class: 114
+      Script: {instanceID: 351716}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -241,6 +265,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
     - Class: 156049354
       Script: {instanceID: 0}
@@ -419,10 +449,10 @@ ScriptsOnlyBuild:
     className: DesertTempleTeleport
   - hash:
       serializedVersion: 2
-      Hash: cc73ce48c93f09880991d4e08fbe83f6
+      Hash: 58e52dc06b0960fa0288cb5c77686543
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: MeleeAttack
+    className: PlayerAttack
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -641,7 +671,7 @@ ScriptsOnlyBuild:
     className: ForestTempleTeleport
   - hash:
       serializedVersion: 2
-      Hash: 8c1cdd0f1b67b5b6045078c39ec83306
+      Hash: 19297ba2358313d937cb23f532a48a53
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameUI
@@ -659,7 +689,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: bfdf060b2603148594c3c06838d1c1db
+      Hash: 195cd6a5a2548d7be67b7b9cc206214e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Coin
@@ -707,7 +737,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: db4d0617b3c974cc3b90756983fad47b
+      Hash: 0969c5bbc8ba8f3c995b5824fd7b2972
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyAI
@@ -749,13 +779,19 @@ ScriptsOnlyBuild:
     className: TMP_TextSelector_A
   - hash:
       serializedVersion: 2
+      Hash: ba4a51231daf73a5d6c13a05c9e68af5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CrateButton
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 2a7767d07dcd78b175e571b0565992a3
+      Hash: ba4a51231daf73a5d6c13a05c9e68af5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerButton
@@ -809,7 +845,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: b3eea1c8eaa022fccda8047255239be9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: KeyPickup
@@ -1061,13 +1097,25 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 2a7767d07dcd78b175e571b0565992a3
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: CrateButton
+    className: Ammo
+  - hash:
+      serializedVersion: 2
+      Hash: d13bcf16a72b8155ed1889e5dedddd54
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ArrowDamage
+  - hash:
+      serializedVersion: 2
+      Hash: 2122ad77b35f7f0129bab21633be2a24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetVolume
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/OrionFlower.unity
   playerPath: C:/Users/Caleb Long/Desktop/The Quest For Orion's Flower (Test Build
-    1)/TheQuestForOrionsFlower.exe
+    2)/TheQuestForOrionsFlower.exe

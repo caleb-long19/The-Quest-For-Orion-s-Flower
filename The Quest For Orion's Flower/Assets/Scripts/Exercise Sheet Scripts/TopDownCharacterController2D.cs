@@ -6,11 +6,10 @@ using System.Collections.Generic;
 
 public class TopDownCharacterController2D : MonoBehaviour
 {
-    public float speed = 5.0f;
+    public static float speed = 5.0f;
     public static float PlayerSpeed;
-    Rigidbody2D rigidBody2D;
     public Animator Player;
-
+    Rigidbody2D rigidBody2D;
     Vector2 Movement;
 
     // Start is called before the first frame update
