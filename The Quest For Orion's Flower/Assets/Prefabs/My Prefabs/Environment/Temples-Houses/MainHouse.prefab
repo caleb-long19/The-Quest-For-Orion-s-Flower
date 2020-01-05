@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1805365874619165307}
   - component: {fileID: 1805365874619165305}
   - component: {fileID: 1805365874619165310}
+  - component: {fileID: 8531610019402710781}
   m_Layer: 0
   m_Name: MainHouse
   m_TagString: Untagged
@@ -137,3 +138,19 @@ EdgeCollider2D:
   - {x: 0.5190499, y: 0.081924096}
   - {x: 0.4130325, y: 0.12830324}
   - {x: 0.009083339, y: 0.27175084}
+--- !u!114 &8531610019402710781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805365874619165311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a6ac1a24637f13408af7cf2410c2e65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Win: {fileID: 0}
+  Player: {fileID: 0}
+  Dad: {fileID: 0}
+  Mum: {fileID: 0}

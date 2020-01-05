@@ -24,7 +24,7 @@ public class HealthSystem : MonoBehaviour
         currentHP = health;
 }
 
-    public void TakeDamage(int damage)
+    public void TakeEnemyDamage(int damage)
     {
         shield -= damage;
 

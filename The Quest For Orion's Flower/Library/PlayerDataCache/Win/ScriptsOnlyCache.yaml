@@ -4,12 +4,14 @@ ScriptsOnlyBuild:
     - Ammo
     - AncientTempleTeleport
     - ArrowDamage
+    - ButtonSound
     - Coin
     - CrateButton
     - DesertTempleTeleport
     - Dialog
     - EnemyAI
     - ForestTempleTeleport
+    - FrostTempleTeleport
     - GameManager
     - GameOver
     - GameUI
@@ -17,22 +19,21 @@ ScriptsOnlyBuild:
     - HurtTrigger
     - KeyPickup
     - LockedDoors
+    - MeleeAttack
     - Orb
     - PauseMenu
     - Player
-    - PlayerAttack
     - PlayerButton
+    - RangedAttack
     - SetVolume
     - SmoothFollow2D
     - TopDownCharacterController2D
+    - WinScreen
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridPaintPaletteClipboard
-    - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
-    - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.TextMeshPro.dll:
@@ -45,10 +46,12 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationBlendTree.Node
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -96,7 +99,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9682}
     - Class: 114
-      Script: {instanceID: 9892}
+      Script: {instanceID: 9894}
     - Class: 114
       Script: {instanceID: 10310}
     - Class: 114
@@ -104,25 +107,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10698}
     - Class: 114
-      Script: {instanceID: 10934}
+      Script: {instanceID: 10866}
     - Class: 114
-      Script: {instanceID: 10950}
+      Script: {instanceID: 10886}
     - Class: 114
-      Script: {instanceID: 11150}
+      Script: {instanceID: 10940}
     - Class: 114
-      Script: {instanceID: 11216}
+      Script: {instanceID: 10956}
     - Class: 114
-      Script: {instanceID: 11402}
+      Script: {instanceID: 11156}
     - Class: 114
-      Script: {instanceID: 11520}
+      Script: {instanceID: 11222}
     - Class: 114
-      Script: {instanceID: 11558}
+      Script: {instanceID: 11408}
     - Class: 114
-      Script: {instanceID: 11622}
+      Script: {instanceID: 11524}
     - Class: 114
-      Script: {instanceID: 11660}
+      Script: {instanceID: 11562}
     - Class: 114
-      Script: {instanceID: 351716}
+      Script: {instanceID: 11626}
+    - Class: 114
+      Script: {instanceID: 11664}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -158,6 +163,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 50
@@ -187,13 +194,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9682}
     - Class: 114
-      Script: {instanceID: 9782}
+      Script: {instanceID: 9750}
     - Class: 114
-      Script: {instanceID: 9850}
+      Script: {instanceID: 9754}
     - Class: 114
-      Script: {instanceID: 9892}
+      Script: {instanceID: 9784}
     - Class: 114
-      Script: {instanceID: 9906}
+      Script: {instanceID: 9852}
+    - Class: 114
+      Script: {instanceID: 9894}
+    - Class: 114
+      Script: {instanceID: 9908}
     - Class: 114
       Script: {instanceID: 10034}
     - Class: 114
@@ -213,48 +224,54 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10764}
     - Class: 114
-      Script: {instanceID: 10860}
+      Script: {instanceID: 10770}
     - Class: 114
-      Script: {instanceID: 10934}
+      Script: {instanceID: 10862}
     - Class: 114
-      Script: {instanceID: 10944}
+      Script: {instanceID: 10886}
     - Class: 114
-      Script: {instanceID: 11012}
+      Script: {instanceID: 10940}
     - Class: 114
-      Script: {instanceID: 11026}
+      Script: {instanceID: 10950}
     - Class: 114
-      Script: {instanceID: 11028}
+      Script: {instanceID: 11018}
     - Class: 114
-      Script: {instanceID: 11058}
+      Script: {instanceID: 11032}
     - Class: 114
-      Script: {instanceID: 11080}
+      Script: {instanceID: 11034}
     - Class: 114
-      Script: {instanceID: 11150}
+      Script: {instanceID: 11064}
     - Class: 114
-      Script: {instanceID: 11176}
+      Script: {instanceID: 11086}
     - Class: 114
-      Script: {instanceID: 11216}
+      Script: {instanceID: 11156}
     - Class: 114
-      Script: {instanceID: 11254}
+      Script: {instanceID: 11182}
     - Class: 114
-      Script: {instanceID: 11318}
+      Script: {instanceID: 11222}
     - Class: 114
-      Script: {instanceID: 11622}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11630}
+      Script: {instanceID: 11324}
     - Class: 114
-      Script: {instanceID: 11660}
+      Script: {instanceID: 11626}
     - Class: 114
-      Script: {instanceID: 36192}
+      Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 157004}
+      Script: {instanceID: 11664}
     - Class: 114
-      Script: {instanceID: 351716}
+      Script: {instanceID: 1971860}
+    - Class: 114
+      Script: {instanceID: 2749536}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -309,6 +326,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FrostTempleTeleport
+  - hash:
+      serializedVersion: 2
+      Hash: b4481e1b5efee613e7b7a45a8096d4f4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ArrowDamage
   - hash:
       serializedVersion: 2
       Hash: 22a048b476ffc0b726517b6e0d816dcd
@@ -383,7 +406,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 25ce29714f5f1cc74816a25875026d0e
+      Hash: 05daedc67a6e7c143861a56b3f52dd3b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HealthSystem
@@ -399,12 +422,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DestroyWall
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -449,10 +466,10 @@ ScriptsOnlyBuild:
     className: DesertTempleTeleport
   - hash:
       serializedVersion: 2
-      Hash: 58e52dc06b0960fa0288cb5c77686543
+      Hash: b4d19a9b6e50ee065aafd76011cae662
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PlayerAttack
+    className: RangedAttack
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -629,7 +646,7 @@ ScriptsOnlyBuild:
     className: Orb
   - hash:
       serializedVersion: 2
-      Hash: ded280d3caf70a2cb438dde556bf2aeb
+      Hash: 613f0961e2ac29507254db7cdcee2194
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Dialog
@@ -677,6 +694,12 @@ ScriptsOnlyBuild:
     className: GameUI
   - hash:
       serializedVersion: 2
+      Hash: 3e2a54c6da896f28653a05c30725046f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Ammo
+  - hash:
+      serializedVersion: 2
       Hash: e244702e0dc05782229aa524e4d757f5
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -693,6 +716,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Coin
+  - hash:
+      serializedVersion: 2
+      Hash: 738c23b7b3b2a8414d48e37a088fd920
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonSound
+  - hash:
+      serializedVersion: 2
+      Hash: 2122ad77b35f7f0129bab21633be2a24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetVolume
   - hash:
       serializedVersion: 2
       Hash: 11319334e5365797f8056694f9b5dae4
@@ -737,7 +772,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 0969c5bbc8ba8f3c995b5824fd7b2972
+      Hash: ce9b2bf1a202f15779000f57ead5b325
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyAI
@@ -779,7 +814,7 @@ ScriptsOnlyBuild:
     className: TMP_TextSelector_A
   - hash:
       serializedVersion: 2
-      Hash: ba4a51231daf73a5d6c13a05c9e68af5
+      Hash: 60cd4476b104fe8c68c524556d7eebff
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CrateButton
@@ -797,7 +832,7 @@ ScriptsOnlyBuild:
     className: PlayerButton
   - hash:
       serializedVersion: 2
-      Hash: 487529708982734d3c1eb0c8b5bc2c43
+      Hash: 291cdb0eeb9a48549475cab249340f1c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LockedDoors
@@ -821,7 +856,7 @@ ScriptsOnlyBuild:
     className: TMP_TextInfoDebugTool
   - hash:
       serializedVersion: 2
-      Hash: 5f2a86d24bcbb64b4ddaee816f7cc873
+      Hash: cd89eb86a33f7e305a649c2fabdc3eb4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TopDownCharacterController2D
@@ -845,7 +880,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: b3eea1c8eaa022fccda8047255239be9
+      Hash: 593a8dbc1d68409076e1d22079d1be68
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: KeyPickup
@@ -951,12 +986,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMPro_InstructionOverlay
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AnimatorController
   - hash:
       serializedVersion: 2
       Hash: bfdf060b2603148594c3c06838d1c1db
@@ -1100,22 +1129,16 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Ammo
+    className: MeleeAttack
   - hash:
       serializedVersion: 2
-      Hash: d13bcf16a72b8155ed1889e5dedddd54
+      Hash: 5c076646c07137eb56afee55a7d0d8b5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ArrowDamage
-  - hash:
-      serializedVersion: 2
-      Hash: 2122ad77b35f7f0129bab21633be2a24
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SetVolume
+    className: WinScreen
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/OrionFlower.unity
   playerPath: C:/Users/Caleb Long/Desktop/The Quest For Orion's Flower (Test Build
-    2)/TheQuestForOrionsFlower.exe
+    4)/TheQuestForOrionsFlower.exe

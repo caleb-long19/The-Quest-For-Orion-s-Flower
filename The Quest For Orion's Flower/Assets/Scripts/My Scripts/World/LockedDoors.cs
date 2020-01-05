@@ -7,6 +7,7 @@ public class LockedDoors : MonoBehaviour
     public GameObject LockedDoor;
     public GameObject OpenDoor;
     public GameObject GoldKey;
+    public AudioClip Key;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class LockedDoors : MonoBehaviour
             LockedDoor.SetActive(false);
             OpenDoor.SetActive(true);
             GoldKey.SetActive(false);
+            AudioSource.PlayClipAtPoint(Key, this.gameObject.transform.position);
         }
     }
 }

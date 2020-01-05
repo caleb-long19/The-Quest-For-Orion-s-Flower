@@ -18,20 +18,6 @@ public class Player : MonoBehaviour
         gunAnim = GetComponent<Animator>();
     }
 
-    /*
-    private void Update()
-    {
-        if (Input.GetMouseButton(1))
-        {
-            GetComponent<Animator>().SetBool("isFiring", true);
-        }
-        else
-        {
-            GetComponent<Animator>().SetBool("isFiring", false);
-        }
-    }
-    */
-
     public void SendHealthData(int health)
     {
         if (OnUpdateHealth != null)

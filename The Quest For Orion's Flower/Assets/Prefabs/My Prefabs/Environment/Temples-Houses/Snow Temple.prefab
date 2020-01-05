@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7355965577444068615}
   - component: {fileID: 7355965577444068634}
   - component: {fileID: 7355965577444068613}
-  - component: {fileID: 7355965577444068635}
   m_Layer: 0
   m_Name: Snow Temple
   m_TagString: Untagged
@@ -137,17 +136,3 @@ EdgeCollider2D:
   - {x: 0.5923692, y: 0.06206194}
   - {x: 0.7141995, y: 0.044887856}
   - {x: 0.7120537, y: -0.49622372}
---- !u!114 &7355965577444068635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7355965577444068614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 140665e813d4c6c4cbd2f94dce8cdb39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Teleporter: {fileID: 0}
-  Player: {fileID: 0}

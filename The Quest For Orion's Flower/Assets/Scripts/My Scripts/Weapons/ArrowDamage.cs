@@ -6,7 +6,7 @@ public class ArrowDamage : MonoBehaviour
 {
     public GameObject Blood; // Blood particles for enemy
 
-    public float moveSpeed = 100.0f;
+    public static float moveSpeed = 600.0f;
     public int damage = 5;
 
     private void Start()

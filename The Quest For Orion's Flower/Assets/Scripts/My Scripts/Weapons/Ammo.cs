@@ -17,7 +17,7 @@ public class Ammo : MonoBehaviour
         if (other.gameObject.tag.Equals("Player")) //If "Player" collides with coin add 20 points and destroy object
         {
             AudioSource.PlayClipAtPoint(audio, this.gameObject.transform.position);
-            ammo = 5; // Every coin pickup equals to 20 points
+            ammo += 5; // Every coin pickup equals to 20 points
             Debug.Log("Player Has Collided!");
             Destroy(gameObject);
         }

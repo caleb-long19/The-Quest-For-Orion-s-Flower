@@ -10,6 +10,9 @@ public class Dialog : MonoBehaviour
 
     public GameObject DailogTextSword;
     public GameObject DailogTextQuest;
+    public GameObject DailogMumQuest;
+    public GameObject DailogDadWin;
+    public GameObject DailogMumWin;
 
     // Start is called before the first frame update
     void Start()
@@ -38,16 +41,26 @@ public class Dialog : MonoBehaviour
             DialogBoxDad.SetActive(false);
         }
 
-        if(PlayerAttack.SwordPickup == true)
+        if(KeyPickup.SwordPickup == true)
         {
             DailogTextQuest.SetActive(true);
+            DailogMumQuest.SetActive(true);
             DailogTextSword.SetActive(false);
         }
-        else if (PlayerAttack.SwordPickup == false)
+        else if (KeyPickup.SwordPickup == false)
         {
             DailogTextSword.SetActive(true);
+            DailogMumQuest.SetActive(true);
             DailogTextQuest.SetActive(false);
+        }
 
+        if(KeyPickup.OrionFlower == true)
+        {
+            DailogTextQuest.SetActive(false);
+            DailogMumQuest.SetActive(false);
+            DailogTextSword.SetActive(false);
+            DailogDadWin.SetActive(true);
+            DailogMumWin.SetActive(true);
         }
     }
 

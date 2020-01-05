@@ -13,15 +13,22 @@ public class KeyPickup : MonoBehaviour
     public static bool DesertOrb;
     public static bool OrionFlower;
 
+    public static bool BowPickup;
+    public static bool SwordPickup;
+
     public static bool AllOrbs;
-    public new AudioClip Keys;
-    public new AudioClip OrbPickup;
+    public AudioClip Keys;
+    public AudioClip OrbPickup;
+    public AudioClip Pickup;
 
     public void Start()
     {
         ForestKey = false;
         FrostKey = false;
         DesertKey = false;
+
+        SwordPickup = false;
+        BowPickup = false;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -74,6 +81,21 @@ public class KeyPickup : MonoBehaviour
             AudioSource.PlayClipAtPoint(OrbPickup, this.gameObject.transform.position);
             OrionFlower = true;
             Destroy(GameObject.FindWithTag("OrionFlower"));
+        }
+
+        if (collision.tag == "Sword")
+        {
+            AudioSource.PlayClipAtPoint(Pickup, this.gameObject.transform.position);
+            SwordPickup = true;
+            Destroy(GameObject.FindWithTag("Sword"));
+        }
+
+
+        if (collision.tag == "Bow")
+        {
+            AudioSource.PlayClipAtPoint(Pickup, this.gameObject.transform.position);
+            BowPickup = true;
+            Destroy(GameObject.FindWithTag("Bow"));
         }
     }
 

@@ -19,6 +19,8 @@ TagManager:
   - Crate
   - Bow
   - OrionFlower
+  - Enemy
+  - Knockback
   layers:
   - Default
   - TransparentFX

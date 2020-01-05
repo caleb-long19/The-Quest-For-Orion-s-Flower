@@ -10,16 +10,16 @@ GameObject:
   m_Component:
   - component: {fileID: 3700061207169467911}
   - component: {fileID: 3700061207169467910}
+  - component: {fileID: 8252891487222699221}
   - component: {fileID: 3700061207169467909}
   - component: {fileID: 3700061207169467908}
-  - component: {fileID: 2182521181122802208}
   - component: {fileID: 2563262797643963469}
   - component: {fileID: 2543485226004588703}
   - component: {fileID: 6333317551398573597}
   - component: {fileID: 4574757492947016578}
   m_Layer: 8
   m_Name: Slimes (Green)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,6 +88,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &8252891487222699221
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3700061207169467915}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!95 &3700061207169467909
 Animator:
   serializedVersion: 3
@@ -133,22 +154,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8477019, y: 0.36052406}
   m_EdgeRadius: 0
---- !u!58 &2182521181122802208
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3700061207169467915}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0262084, y: 0.14121401}
-  serializedVersion: 2
-  m_Radius: 3.8950448
 --- !u!114 &2563262797643963469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,12 +167,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHp: 10
-  PlayerCollision: 0
-  speed: 1
-  target: {fileID: 4581204024177095260, guid: 75ca082a369c1274fb8f68b10ddfe69a, type: 3}
-  EnemyMovement: {fileID: 3700061207169467909}
-  Hurt: {fileID: 8300000, guid: 2b56e783a7a12054e9b04e9e042d2197, type: 3}
+  EnemySpeed: 2
+  MinEnemyRange: 0
+  MaxEnemyRange: 4
   Blood: {fileID: 2541331030509968183, guid: 2ae4d24c791878c4dbf75083c1033954, type: 3}
+  Hurt: {fileID: 8300000, guid: 2b56e783a7a12054e9b04e9e042d2197, type: 3}
 --- !u!114 &2543485226004588703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,8 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fab4c2b1c8e07d4c99d5abb03ca559f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 4
-  resetTime: 1
+  damage: 6
+  resetTime: 0.2
 --- !u!82 &6333317551398573597
 AudioSource:
   m_ObjectHideFlags: 0

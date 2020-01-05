@@ -10,16 +10,16 @@ GameObject:
   m_Component:
   - component: {fileID: 6254355243056710141}
   - component: {fileID: 5033959640693352360}
+  - component: {fileID: 1592911240963388483}
   - component: {fileID: 5520249547796778352}
-  - component: {fileID: 912983560518692264}
   - component: {fileID: 8225563122654356284}
-  - component: {fileID: 3101972929220345363}
+  - component: {fileID: 912983560518692264}
   - component: {fileID: 1476821469879553131}
   - component: {fileID: 5177547562049906450}
   - component: {fileID: 2000507761688317648}
   m_Layer: 8
   m_Name: Desert Mummy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,6 +88,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1592911240963388483
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300092913181383270}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!95 &5520249547796778352
 Animator:
   serializedVersion: 3
@@ -107,20 +128,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &912983560518692264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6300092913181383270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fab4c2b1c8e07d4c99d5abb03ca559f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 8
-  resetTime: 1
 --- !u!114 &8225563122654356284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,28 +141,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHp: 25
-  PlayerCollision: 0
-  speed: 3.5
-  target: {fileID: 4581204024177095260, guid: 75ca082a369c1274fb8f68b10ddfe69a, type: 3}
-  EnemyMovement: {fileID: 5520249547796778352}
-  Hurt: {fileID: 8300000, guid: bbc499435db89934c900718c2b1c1cd2, type: 3}
+  EnemySpeed: 2
+  MinEnemyRange: 0
+  MaxEnemyRange: 6
   Blood: {fileID: 2541331030509968183, guid: 2ae4d24c791878c4dbf75083c1033954, type: 3}
---- !u!58 &3101972929220345363
-CircleCollider2D:
+  Hurt: {fileID: 8300000, guid: bbc499435db89934c900718c2b1c1cd2, type: 3}
+--- !u!114 &912983560518692264
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6300092913181383270}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0077912016, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.7993679
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fab4c2b1c8e07d4c99d5abb03ca559f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  resetTime: 0.2
 --- !u!61 &1476821469879553131
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -169,7 +173,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00084937364, y: -0.21067041}
+  m_Offset: {x: 0.0025588349, y: -0.0018113256}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -180,7 +184,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13827278, y: 0.22142875}
+  m_Size: {x: 0.25561512, y: 0.6388545}
   m_EdgeRadius: 0
 --- !u!82 &5177547562049906450
 AudioSource:

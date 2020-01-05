@@ -82,11 +82,13 @@
     <Compile Include="Assets\Scripts\My Scripts\NPC\Dialog.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Player\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Player\KeyPickup.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\Player\WinScreen.cs" />
     <Compile Include="Assets\Scripts\My Scripts\UI\GameOver.cs" />
     <Compile Include="Assets\Scripts\My Scripts\UI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Weapons\Ammo.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Weapons\ArrowDamage.cs" />
-    <Compile Include="Assets\Scripts\My Scripts\Weapons\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\Weapons\MeleeAttack.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\Weapons\RangedAttack.cs" />
     <Compile Include="Assets\Scripts\My Scripts\World\AncientTempleTeleport.cs" />
     <Compile Include="Assets\Scripts\My Scripts\World\ButtonSound.cs" />
     <Compile Include="Assets\Scripts\My Scripts\World\Coin.cs" />
