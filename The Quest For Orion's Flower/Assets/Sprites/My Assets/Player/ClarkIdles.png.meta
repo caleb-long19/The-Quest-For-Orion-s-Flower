@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: -8271847864289882618
     second: ClarkIdles_4
+  - first:
+      213: 2736985121150288019
+    second: ClarkIdles_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,12 +107,12 @@ TextureImporter:
       name: ClarkIdles_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 46
+        y: 19
+        width: 26
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5009597, y: 0.1626042}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -125,12 +128,12 @@ TextureImporter:
       name: ClarkIdles_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 174
+        y: 19
+        width: 26
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5009597, y: 0.1626042}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,12 +149,12 @@ TextureImporter:
       name: ClarkIdles_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 302
+        y: 19
+        width: 26
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5009597, y: 0.1626042}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,12 +170,12 @@ TextureImporter:
       name: ClarkIdles_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 430
+        y: 19
+        width: 26
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5009597, y: 0.1626042}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,12 +191,12 @@ TextureImporter:
       name: ClarkIdles_4
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 558
+        y: 19
+        width: 26
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5009597, y: 0.1626042}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,6 +204,27 @@ TextureImporter:
       bones: []
       spriteID: ec789b97634d3604189a7329000e0421
       internalID: -8271847864289882618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClarkIdles_5
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 78
+        width: 7
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254b9c6c8c68bc34c96ee6f43607ff09
+      internalID: 2736985121150288019
       vertices: []
       indices: 
       edges: []
