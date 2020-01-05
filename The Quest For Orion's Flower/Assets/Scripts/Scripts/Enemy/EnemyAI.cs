@@ -17,13 +17,13 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private float MaxEnemyRange = 0; // Maximum range the Enemy can spot player
 
-
     //Unity References
     public GameObject Blood; // Blood particles for Enemies
     private Animator EnemyMovement; // Reference to Unity Animator
     private Transform Target; // Reference to Player position
-    private Vector2 Movement;
+    private Vector2 Movement; // Vector (X, Y) for Enemy Movement
     public AudioClip Hurt;
+
 
     public void Start()
     {
@@ -31,11 +31,12 @@ public class EnemyAI : MonoBehaviour
         Target = FindObjectOfType<TopDownCharacterController2D>().transform; // Target is equal to Player
     }
 
+
     private void Update()
     {
         if (Vector3.Distance(Target.position, transform.position) <= MaxEnemyRange && Vector3.Distance(Target.position, transform.position)>= MinEnemyRange)
         {
-            TrackPlayer();
+            TrackPlayer(); // If the Players Positon is out of the Enemies Max Range && the Player is above the Enemies Minimum Range, run the Track Player Method
         }
 
         if (EnemyHealth <= 0)
@@ -53,13 +54,13 @@ public class EnemyAI : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, Target.transform.position, EnemySpeed * Time.deltaTime); // Transforms Enemies Position to Players Position
     }
 
-    public void TakeDamage(int damage) // Procedure for Enenmies taking damage from player
+    public void TakeDamage(int damage) // Method for Enenmies taking damage from Player
     {
         Instantiate(Blood, transform.position, Quaternion.identity); // When Enemy is damaged play blood particle effect
         AudioSource.PlayClipAtPoint(Hurt, this.gameObject.transform.position); // Play Enemy Hurt sound effect when Damaged
         EnemyHealth -= damage; // Enemies Health takes damage from Player
 
-        Debug.Log("Enemy has Taken Damage!");
+        Debug.Log("Enemy has Taken Damage!"); // Display Debug Log in Console
     }
 
     public void SetTarget(Transform newTarget)
@@ -69,10 +70,10 @@ public class EnemyAI : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Knockback")
+        if(collision.tag == "Knockback") // If the collision/hit box tag is equal to Knockback
         {
-            Vector2 difference = transform.position - collision.transform.position;
-            transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y); // When Player deals damage to Enemy, Enemy gets knocked back
+            Vector2 difference = transform.position - collision.transform.position; // Calculate the difference in position for knockback
+            transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y); // When Player deals damage to Enemy, Enemy gets knocked back on the X,Y Axis
         }
     }
 

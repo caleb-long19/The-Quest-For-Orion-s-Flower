@@ -6,8 +6,8 @@ using TMPro;
 
 public class GameOver : MonoBehaviour
 {
-    public GameObject DeathScreen; // Attatch gameObject called DeathMenu in unity
-    public TextMeshProUGUI scoreText;
+    public GameObject DeathScreen; // Attatch GameObject called DeathScreen in unity
+    public TextMeshProUGUI scoreText; // Get Text Mesh Component to store Score Text from the UI
 
     private void Start()
     {
@@ -18,13 +18,13 @@ public class GameOver : MonoBehaviour
     {
         if (HealthSystem.health <= 0)
         {
-            DeathScreen.SetActive(true); // When player health is equal to 0, DeathScreen is true
+            DeathScreen.SetActive(true); // When player health is equal to 0, DeathScreen is active
             scoreText.text = "SCORE: " + Coin.score.ToString(); // Score Counter Text is equal to Integer Score
         }
 
         if (HealthSystem.health >= 1)
         {
-            DeathScreen.SetActive(false); // When player health is equal to >=1, DeathScreen is false
+            DeathScreen.SetActive(false); // When player health is equal to >= 1, DeathScreen is not active
         }
 
     }

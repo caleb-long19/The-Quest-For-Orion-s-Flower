@@ -25,7 +25,7 @@ public class GameUI : MonoBehaviour
 
     public void Update()
     {
-        // Health and Score
+        #region Health, Shield, and Score UI Elements
         currentHealth = HealthSystem.health;  // currentHealth is equal to health
         currentShield = HealthSystem.shield; // currentShield is equal to shield
         currentAmmo = Ammo.ammo; // currentAmmo is equal to ammo
@@ -35,10 +35,9 @@ public class GameUI : MonoBehaviour
         ammoText.text = "AMMO: " + currentAmmo.ToString(); // Ammo Counter Text is equal to Integer Ammo
         scoreText.text = "SCORE: " + Coin.score.ToString(); // Score Counter Text is equal to Integer Score
         scoreText.GetComponent<Animator>().Play(0);
+        #endregion
 
-
-
-        // Player Weapon IF Statements
+        #region Player UI Weapon Icon IF Statements
         if (KeyPickup.SwordPickup == true) // If Sword has been picked up, run method
         {
             Color tmp = SwordIcon.GetComponent<SpriteRenderer>().color; //Get the Sword Icon Game Object
@@ -52,8 +51,9 @@ public class GameUI : MonoBehaviour
             tmp.a = 100f; // Alpha colour is equal to 100
             BowIcon.GetComponent<SpriteRenderer>().color = tmp; // Sword Icon Alpha Colour is equal to tmp (100)
         }
+        #endregion
 
-        // Temple Orbs IF Statements
+        #region Player UI Temple Orb Icons IF Statements
         if (KeyPickup.ForestOrb == true) // If Player has picked up Forest Orb, run method
         {
             Color tmp = ForestOrb.GetComponent<SpriteRenderer>().color; // Get the Forest Orb Icon Game Object
@@ -74,5 +74,6 @@ public class GameUI : MonoBehaviour
             tmp.a = 100f; // Alpha colour is equal to 100
             DesertOrb.GetComponent<SpriteRenderer>().color = tmp; // Desert Orb Icon Alpha Colour is equal to tmp (100)
         }
+        #endregion
     }
 }

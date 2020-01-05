@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject PauseScreen;
-    public GameObject SettingsScreen;
-    public GameObject ControlsScreen;
+    public GameObject PauseScreen; // GameObject for the Players Pause Screen
+    public GameObject SettingsScreen; // GameObject for the Players Setting Screen
+    public GameObject ControlsScreen; // GameObject for the Players Control Screen
 
-    private bool paused = false; // boolean set for pause menu
+    private bool paused = false; // bool for Pause Menu, has the Player paused or not
 
     private void Start()
     {
@@ -19,9 +19,10 @@ public class PauseMenu : MonoBehaviour
 
     private void Update()
     {
+        #region Methods for the Pause, Settings and Controls Screens
         if (Input.GetButtonDown("Pause"))
         {
-            paused = !paused; // if "escape" is pressed, pause the game
+            paused = !paused; // if "escape" key is pressed, pause the game
         }
 
         if (paused)
@@ -46,11 +47,12 @@ public class PauseMenu : MonoBehaviour
 
             if (Input.GetButtonDown("Pause"))
             {
-                PauseScreen.SetActive(false);
-                SettingsScreen.SetActive(false);
-                ControlsScreen.SetActive(false);
+                PauseScreen.SetActive(false); // Pause Screen is seto to false when "Escape" key is pressed
+                SettingsScreen.SetActive(false); // Settings Screen is seto to false when "Escape" key is pressed
+                ControlsScreen.SetActive(false); // Controls Screen is seto to false when "Escape" key is pressed
             }
         }
+        #endregion
     }
 
     public void Resume()

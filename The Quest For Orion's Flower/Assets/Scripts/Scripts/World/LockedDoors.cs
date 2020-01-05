@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class LockedDoors : MonoBehaviour
 {
-    public GameObject LockedDoor;
-    public GameObject OpenDoor;
-    public GameObject GoldKey;
-    public AudioClip Key;
+    public GameObject LockedDoor; // GameObject for Locked Doors
+    public GameObject OpenDoor; // GameObject for Open Doors
+    public GameObject GoldKey; // GameObject for Gold Keys
+    public AudioClip Key; // Audio Clip for Gold Keys
 
-    // Start is called before the first frame update
     void Start()
     {
         LockedDoor.SetActive(true); // LockedDoor bool is equal to True
@@ -24,7 +23,7 @@ public class LockedDoors : MonoBehaviour
             OpenDoor.SetActive(true); // Open Door GameObject is set to Active
             GoldKey.SetActive(false); // Gold Key GameObject is set to Inactive
 
-            AudioSource.PlayClipAtPoint(Key, this.gameObject.transform.position); // Play Sound Effect
+            AudioSource.PlayClipAtPoint(Key, this.gameObject.transform.position); // Play Key Collect Sound Effect
         }
     }
 }

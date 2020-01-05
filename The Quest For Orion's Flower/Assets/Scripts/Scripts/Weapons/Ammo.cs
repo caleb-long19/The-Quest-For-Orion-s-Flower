@@ -5,10 +5,10 @@ using UnityEngine;
 public class Ammo : MonoBehaviour
 {
     //Integers
-    public static int ammo = 0;
+    public static int ammo = 0; // Integer for Players Ammo Count
 
     //Unity References
-    public AudioClip AmmoPickup;
+    public AudioClip AmmoPickup; // Audio Clip for the Ammo Pickup
 
     private void Start()
     {

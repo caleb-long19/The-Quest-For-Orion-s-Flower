@@ -9,16 +9,19 @@ public class WinScreen : MonoBehaviour
     public GameObject Player; // Player GameObject
     public GameObject Dad; // Dad NPC GameObject
     public GameObject Mum; // Mum NPC GameObject
-    public GameObject DialogDad;
-    public GameObject DialogMum;
+    public GameObject DialogDad; // GameObject for Dad NPC Dialog Box
+    public GameObject DialogMum; // GameObject for Mum NPC Dialog Box
+
 
     private void Start()
     {
         Win.SetActive(false); // When the Game Starts, Win Screen is inactive
     }
 
+
     private void OnTriggerStay2D(Collider2D collision)
     {
+        // If Player presses Space on the House and has acquired Orion's Flower, run if statement
         if(Input.GetKey(KeyCode.Space) & collision.tag.Equals("Player") && KeyPickup.OrionFlower == true)
         {
             Win.SetActive(true); // When Player collides with Main House and has Orion's Flower, Win Screen is Active
@@ -31,11 +34,13 @@ public class WinScreen : MonoBehaviour
         }
     }
 
+
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // When Restart Button is Selected, Reload Current Scene
         Time.timeScale = 1; // Game is unpaused
     }
+
 
     public void Exit()
     {
