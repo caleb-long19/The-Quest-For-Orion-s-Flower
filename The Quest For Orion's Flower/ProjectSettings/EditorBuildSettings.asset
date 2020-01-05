@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MainMenu.unity
+    guid: 10b7f9886c7e44c4e85d8d6e9757ea24
+  - enabled: 1
+    path: Assets/Scenes/OrionFlower.unity
+    guid: 308eb38ab0773f947be01e1a256d6e7e
   m_configObjects: {}
