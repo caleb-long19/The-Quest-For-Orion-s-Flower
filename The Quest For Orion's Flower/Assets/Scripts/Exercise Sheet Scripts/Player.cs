@@ -8,6 +8,9 @@ public class Player : MonoBehaviour
     public delegate void UpdateHealth(int newHealth);
     public static event UpdateHealth OnUpdateHealth;
 
+    public delegate void UpdateShield(int newShield);
+    public static event UpdateShield OnUpdateShield;
+
     private Animator gunAnim;
 
     private void Start()
@@ -17,7 +20,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(1))
         {
             GetComponent<Animator>().SetBool("isFiring", true);
         }
@@ -29,10 +32,17 @@ public class Player : MonoBehaviour
 
     public void SendHealthData(int health)
     {
-       
         if (OnUpdateHealth != null)
         {
             OnUpdateHealth(health);
+        }
+    }
+
+    public void SendShieldData(int shield)
+    {
+        if (OnUpdateShield != null)
+        {
+            OnUpdateShield(shield);
         }
     }
 }

@@ -8,7 +8,7 @@ public class TopDownCharacterController2D : MonoBehaviour
 {
     public float speed = 5.0f;
     Rigidbody2D rigidBody2D;
-    public Animator PlayerMovement;
+    public Animator Player;
 
     Vector2 Movement;
 
@@ -24,12 +24,13 @@ public class TopDownCharacterController2D : MonoBehaviour
         Movement.x = Input.GetAxis("Horizontal");
         Movement.y = Input.GetAxis("Vertical");
 
-        PlayerMovement.SetFloat("Horizontal", Movement.x);
-        PlayerMovement.SetFloat("Vertical", Movement.y);
-        PlayerMovement.SetFloat("Speed", Movement.sqrMagnitude);
+        Player.SetFloat("Horizontal", Movement.x);
+        Player.SetFloat("Vertical", Movement.y);
+        Player.SetFloat("Speed", Movement.sqrMagnitude);
 
         rigidBody2D.velocity = new Vector2(Movement.x, Movement.y) * speed;
         rigidBody2D.angularVelocity = 0.0f;
 
     }
+
 }

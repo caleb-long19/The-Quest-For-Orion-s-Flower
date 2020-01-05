@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 7270469968777541082}
   - component: {fileID: 7270469968777541081}
   - component: {fileID: 1318130795365861777}
-  - component: {fileID: 210908486151617969}
   m_Layer: 0
   m_Name: Heart
-  m_TagString: Untagged
+  m_TagString: Health
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +112,7 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -139,26 +138,3 @@ EdgeCollider2D:
   - {x: 0.089263536, y: 0.02101164}
   - {x: 0.07102852, y: 0.020392895}
   - {x: 0.07104569, y: 0.02920704}
---- !u!114 &210908486151617969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7270469968777541080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581761a14662d754584a6d18659e6fe3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
-  onDie:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDamaged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null

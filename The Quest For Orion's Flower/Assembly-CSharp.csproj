@@ -68,10 +68,8 @@
     <Compile Include="Assets\Scripts\Exercise Sheet Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Exercise Sheet Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Exercise Sheet Scripts\GameUI.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\Exercise Sheet Scripts\HurtTrigger.cs" />
     <Compile Include="Assets\Scripts\Exercise Sheet Scripts\MouseSmoothLook2D.cs" />
-    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\MoveTowardsObject.cs" />
     <Compile Include="Assets\Scripts\Exercise Sheet Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Exercise Sheet Scripts\PoolManager.cs" />
     <Compile Include="Assets\Scripts\Exercise Sheet Scripts\SmoothFollow2D.cs" />
@@ -83,7 +81,8 @@
     <Compile Include="Assets\Scripts\My Scripts\AnimatorController.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Coin.cs" />
-    <Compile Include="Assets\Scripts\My Scripts\HealthPickup.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\HealthSystem.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\MoveTowardsObject.cs" />
     <Compile Include="Assets\Scripts\My Scripts\SpriteOrderRenderer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

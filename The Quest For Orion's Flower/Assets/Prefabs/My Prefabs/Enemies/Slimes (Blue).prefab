@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7705060929577907015}
   - component: {fileID: 9041491370272236605}
   - component: {fileID: 420986407812951609}
+  - component: {fileID: 8100985467169616986}
   m_Layer: 0
   m_Name: Slimes (Blue)
   m_TagString: Untagged
@@ -142,8 +143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7913b4aba8219740bd26d4654b21b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 1
+  target: {fileID: 4581204024177095260, guid: 75ca082a369c1274fb8f68b10ddfe69a, type: 3}
+  PlayerCollision: 0
+  speed: 1.5
 --- !u!114 &420986407812951609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,5 +158,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fab4c2b1c8e07d4c99d5abb03ca559f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  resetTime: 0.25
+  damage: 5
+  resetTime: 1
+--- !u!58 &8100985467169616986
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7705060929577907014}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.056522846, y: 0.10173845}
+  serializedVersion: 2
+  m_Radius: 4.325209
