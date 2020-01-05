@@ -1,0 +1,2 @@
+D:\University Work\Soft 166 - Programme Introduction and Development Workshops\Unity Project Location\TheQuestForOrionsFlower\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\University Work\Soft 166 - Programme Introduction and Development Workshops\Unity Project Location\TheQuestForOrionsFlower\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

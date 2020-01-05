@@ -44,8 +44,10 @@ public class EnemyAI : MonoBehaviour
         if (collision.tag == "Player")
         {
             PlayerCollision = true;
-            EnemyMovement.SetBool("Attack", true);
-
+            if (collision.tag.Equals("Snowman"))
+            {
+                EnemyMovement.SetBool("Attack", true);
+            }
         }
         
     }
@@ -53,7 +55,10 @@ public class EnemyAI : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         PlayerCollision = false;
-        EnemyMovement.SetBool("Attack", false);
+        if (collision.tag.Equals("Snowman"))
+        {
+            EnemyMovement.SetBool("Attack", false);
+        }
     }
 
     public void SetTarget(Transform newTarget)

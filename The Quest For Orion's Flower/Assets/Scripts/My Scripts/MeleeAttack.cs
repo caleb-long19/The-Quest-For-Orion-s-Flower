@@ -37,7 +37,7 @@ public class MeleeAttack : MonoBehaviour
                         for (int i = 0; i < enemiesToDamage.Length; i++)
                             enemiesToDamage[i].GetComponent<EnemyAI>().TakeDamage(damage); // Find Enemy component and deal damage
 
-                        timeBtwAttack = startTimeBtwAttack;
+                    timeBtwAttack = startTimeBtwAttack;
                     }
                 }
                 else
