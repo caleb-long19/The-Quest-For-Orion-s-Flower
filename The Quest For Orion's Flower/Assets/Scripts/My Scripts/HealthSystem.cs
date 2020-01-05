@@ -8,11 +8,19 @@ public class OnDamagedEvent : UnityEvent<int> { }
 
 public class HealthSystem : MonoBehaviour
 {
+    //Integers
     public int health = 100;
     public int shield = 50;
-    public UnityEvent onDie;
+    public static int currentHP;
+
+    //UI Elements
     public OnDamagedEvent onDamagedHealth;
     public OnDamagedEvent onDamagedShield;
+
+    public void Start()
+    {
+        currentHP = health;
+}
 
     public void TakeDamage(int damage)
     {
@@ -27,15 +35,23 @@ public class HealthSystem : MonoBehaviour
             onDamagedHealth.Invoke(health);
         }
 
-        if (health < 1)
-        {
-            onDie.Invoke();
-        }
     }
 
     public void Update()
     {
-        if(health > 100)
+
+        if (currentHP > health)
+        {
+            currentHP = health; // if current Hp is greater than the max hp, current hp is set to max hp (100)
+        }
+
+        if (currentHP <= 0)
+        {
+            gameObject.SetActive(false); // if Players current hp is less than or equal to 0, perform Die() procedure
+        }
+
+
+        if (health > 100)
         {
             health = 100;
         }
@@ -52,6 +68,7 @@ public class HealthSystem : MonoBehaviour
         {
             shield = 0;
         }
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)

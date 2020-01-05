@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8225563122654356284}
   - component: {fileID: 3101972929220345363}
   - component: {fileID: 1476821469879553131}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Desert Mummy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7913b4aba8219740bd26d4654b21b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyHp: 25
   target: {fileID: 4581204024177095260, guid: 75ca082a369c1274fb8f68b10ddfe69a, type: 3}
   PlayerCollision: 0
   speed: 2.5

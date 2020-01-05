@@ -81,9 +81,12 @@
     <Compile Include="Assets\Scripts\My Scripts\AnimatorController.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\My Scripts\Coin.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\Dialog.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\My Scripts\HealthSystem.cs" />
-    <Compile Include="Assets\Scripts\My Scripts\MoveTowardsObject.cs" />
-    <Compile Include="Assets\Scripts\My Scripts\SpriteOrderRenderer.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\MeleeAttack.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\PauseMenu.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

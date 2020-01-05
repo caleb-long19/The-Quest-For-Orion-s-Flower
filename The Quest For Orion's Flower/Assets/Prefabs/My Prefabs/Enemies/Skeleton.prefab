@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1427799184666964856}
   - component: {fileID: 6644467747707267951}
   - component: {fileID: 865235648232745325}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7913b4aba8219740bd26d4654b21b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyHp: 30
   target: {fileID: 0}
   PlayerCollision: 0
   speed: 2.5

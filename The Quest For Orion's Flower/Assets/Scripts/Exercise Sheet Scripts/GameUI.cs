@@ -2,9 +2,13 @@
 using UnityEngine.UI;
 public class GameUI : MonoBehaviour
 {
+
+    // UI Elements
     public Slider healthBar;
     public Slider shieldBar;
     public Text scoreText;
+
+    //Integers
     public int playerScore = 0;
 
     private void OnEnable()

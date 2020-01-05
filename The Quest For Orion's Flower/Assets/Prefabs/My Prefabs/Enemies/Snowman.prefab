@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 5012261001792697545}
   - component: {fileID: 5012261001792697546}
   - component: {fileID: 5012261001792697547}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Snowman
-  m_TagString: Untagged
+  m_TagString: Snowman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,9 +116,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7913b4aba8219740bd26d4654b21b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 4581204024177095260, guid: 75ca082a369c1274fb8f68b10ddfe69a, type: 3}
+  enemyHp: 10
   PlayerCollision: 0
   speed: 3
+  snowman: {fileID: 5012261001792697396}
+  target: {fileID: 4581204024177095260, guid: 75ca082a369c1274fb8f68b10ddfe69a, type: 3}
   EnemyMovement: {fileID: 5012261001792697551}
 --- !u!114 &5012261001792697545
 MonoBehaviour:

@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 7705060929577907013}
   - component: {fileID: 7705060929577907012}
   - component: {fileID: 7705060929577907015}
+  - component: {fileID: 8100985467169616986}
   - component: {fileID: 9041491370272236605}
   - component: {fileID: 420986407812951609}
-  - component: {fileID: 8100985467169616986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Slimes (Blue)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,35 +131,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8530816, y: 0.34979367}
   m_EdgeRadius: 0
---- !u!114 &9041491370272236605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7705060929577907014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7913b4aba8219740bd26d4654b21b68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 4581204024177095260, guid: 75ca082a369c1274fb8f68b10ddfe69a, type: 3}
-  PlayerCollision: 0
-  speed: 1.5
---- !u!114 &420986407812951609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7705060929577907014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fab4c2b1c8e07d4c99d5abb03ca559f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 5
-  resetTime: 1
 --- !u!58 &8100985467169616986
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -176,3 +147,34 @@ CircleCollider2D:
   m_Offset: {x: -0.056522846, y: 0.10173845}
   serializedVersion: 2
   m_Radius: 4.325209
+--- !u!114 &9041491370272236605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7705060929577907014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7913b4aba8219740bd26d4654b21b68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHp: 0
+  PlayerCollision: 0
+  speed: 1.5
+  target: {fileID: 4581204024177095260, guid: 75ca082a369c1274fb8f68b10ddfe69a, type: 3}
+  EnemyMovement: {fileID: 0}
+--- !u!114 &420986407812951609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7705060929577907014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fab4c2b1c8e07d4c99d5abb03ca559f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  resetTime: 1

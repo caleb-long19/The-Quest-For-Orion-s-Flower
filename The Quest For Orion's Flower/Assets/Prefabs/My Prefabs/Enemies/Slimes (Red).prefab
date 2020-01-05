@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 5328225953138274694}
   - component: {fileID: 5328225953138274693}
   - component: {fileID: 5328225953138274712}
+  - component: {fileID: 5291582198257970554}
   - component: {fileID: 5328225953138274714}
   - component: {fileID: 5328225953138274715}
-  - component: {fileID: 5291582198257970554}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Slimes (Red)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,35 +131,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.859777, y: 0.3322425}
   m_EdgeRadius: 0
---- !u!114 &5328225953138274714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328225953138274692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7913b4aba8219740bd26d4654b21b68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 4581204024177095260, guid: 75ca082a369c1274fb8f68b10ddfe69a, type: 3}
-  PlayerCollision: 0
-  speed: 2
---- !u!114 &5328225953138274715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328225953138274692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fab4c2b1c8e07d4c99d5abb03ca559f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  resetTime: 1
 --- !u!58 &5291582198257970554
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -176,3 +147,34 @@ CircleCollider2D:
   m_Offset: {x: 0.075047016, y: 0.11640501}
   serializedVersion: 2
   m_Radius: 3.6781154
+--- !u!114 &5328225953138274714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5328225953138274692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7913b4aba8219740bd26d4654b21b68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHp: 15
+  PlayerCollision: 0
+  speed: 2
+  target: {fileID: 4581204024177095260, guid: 75ca082a369c1274fb8f68b10ddfe69a, type: 3}
+  EnemyMovement: {fileID: 0}
+--- !u!114 &5328225953138274715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5328225953138274692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fab4c2b1c8e07d4c99d5abb03ca559f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  resetTime: 1

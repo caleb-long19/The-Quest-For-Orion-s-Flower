@@ -7,6 +7,7 @@ using System.Collections.Generic;
 public class TopDownCharacterController2D : MonoBehaviour
 {
     public float speed = 5.0f;
+    public static float PlayerSpeed;
     Rigidbody2D rigidBody2D;
     public Animator Player;
 
@@ -16,6 +17,11 @@ public class TopDownCharacterController2D : MonoBehaviour
     void Start()
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        PlayerSpeed = rigidBody2D.angularVelocity;
     }
 
     // Update is called once per frame
