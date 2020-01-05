@@ -53,14 +53,14 @@ TagManager:
   - name: Items
     uniqueID: 2198204593
     locked: 0
-  - name: Player
-    uniqueID: 4271315517
-    locked: 0
   - name: NPC
     uniqueID: 312311541
     locked: 0
   - name: Enemies
     uniqueID: 2043613865
+    locked: 0
+  - name: Player
+    uniqueID: 4271315517
     locked: 0
   - name: FX
     uniqueID: 4002623761
