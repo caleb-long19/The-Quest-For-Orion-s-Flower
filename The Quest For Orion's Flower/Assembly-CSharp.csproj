@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{895D8247-F980-18C5-BDDE-3C05D94FC51B}</ProjectGuid>
+    <ProjectGuid>{4DF6B39A-08D8-A480-2A80-BE77FB9885CF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,24 +62,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AddScore.cs" />
-    <Compile Include="Assets\Scripts\Bullet.cs" />
-    <Compile Include="Assets\Scripts\DestroyOnDie.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\GameUI.cs" />
-    <Compile Include="Assets\Scripts\HealthSystem.cs" />
-    <Compile Include="Assets\Scripts\HurtTrigger.cs" />
-    <Compile Include="Assets\Scripts\MouseSmoothLook2D.cs" />
-    <Compile Include="Assets\Scripts\MoveTowardsObject.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\PoolManager.cs" />
-    <Compile Include="Assets\Scripts\SmoothFollow2D.cs" />
-    <Compile Include="Assets\Scripts\SmoothLookAtTarget2D.cs" />
-    <Compile Include="Assets\Scripts\Spawner.cs" />
-    <Compile Include="Assets\Scripts\TimerEvent.cs" />
-    <Compile Include="Assets\Scripts\TopDownCharacterController2D.cs" />
-    <Compile Include="Assets\Scripts\Weapon.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\AddScore.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\DestroyOnDie.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\GameUI.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\HealthSystem.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\HurtTrigger.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\MouseSmoothLook2D.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\MoveTowardsObject.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\PoolManager.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\SmoothFollow2D.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\SmoothLookAtTarget2D.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\TimerEvent.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\TopDownCharacterController2D.cs" />
+    <Compile Include="Assets\Scripts\Exercise Sheet Scripts\Weapon.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\AnimatorController.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\Button.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\Coin.cs" />
+    <Compile Include="Assets\Scripts\My Scripts\HealthPickup.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -135,37 +139,37 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Caleb Long/Downloads/2D Unity Project/2D Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Unity/Unity Projects/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Caleb Long/Downloads/2D Unity Project/2D Unity Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Unity/Unity Projects/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Caleb Long/Downloads/2D Unity Project/2D Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Unity/Unity Projects/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Caleb Long/Downloads/2D Unity Project/2D Unity Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Unity/Unity Projects/TheQuestForOrionsFlower/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Caleb Long/Downloads/2D Unity Project/2D Unity Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Unity/Unity Projects/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Caleb Long/Downloads/2D Unity Project/2D Unity Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Unity/Unity Projects/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Caleb Long/Downloads/2D Unity Project/2D Unity Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Unity/Unity Projects/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/Caleb Long/Downloads/2D Unity Project/2D Unity Project/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>D:/Unity/Unity Projects/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/Caleb Long/Downloads/2D Unity Project/2D Unity Project/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>D:/Unity/Unity Projects/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Caleb Long/Downloads/2D Unity Project/2D Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Unity/Unity Projects/TheQuestForOrionsFlower/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Caleb Long/Downloads/2D Unity Project/2D Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Unity/Unity Projects/TheQuestForOrionsFlower/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -13,13 +13,13 @@ TagManager:
   - UI
   - 
   - 
-  - Player Damage
-  - Enemy Health
   - 
   - 
   - 
-  - Player Health
-  - Enemy Damage
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -38,33 +38,36 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 405454529
-    locked: 0
-  - name: Text
-    uniqueID: 1659909309
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Ground
-    uniqueID: 1727897393
+    uniqueID: 3767512577
     locked: 0
   - name: Border
-    uniqueID: 2723198737
+    uniqueID: 3282998883
+    locked: 0
+  - name: Key
+    uniqueID: 1982133009
+    locked: 0
+  - name: Items
+    uniqueID: 2198204593
     locked: 0
   - name: Player
-    uniqueID: 2181907349
+    uniqueID: 4271315517
+    locked: 0
+  - name: NPC
+    uniqueID: 312311541
     locked: 0
   - name: Enemies
-    uniqueID: 2163993767
+    uniqueID: 2043613865
     locked: 0
   - name: FX
-    uniqueID: 3902772441
+    uniqueID: 4002623761
     locked: 0
-  - name: Bullets
-    uniqueID: 718166383
+  - name: Arrows
+    uniqueID: 4017542783
     locked: 0
   - name: Foreground
-    uniqueID: 1370515327
+    uniqueID: 1792399531
     locked: 0
