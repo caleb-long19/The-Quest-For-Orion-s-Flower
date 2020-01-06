@@ -1,6 +1,8 @@
 # The Quest For Orion's Flower!
 You play as Clark, A young man who lives with his family in the woods. Whose family has been cursed,. A curse which prevents the family from ever being safe. Monsters roam the areas around them. Clark's Mother and Father informs Clark of the curse put upon them. Clark takes it upon himself to search for Orion's Flower, a magical object which has the power to grant the user a wish. Clark must explore various Temples and find the orbs to give him access to the Ancient Temple and find Orion's Flower.
 
+## [Itch.io: The Quest For Orion's Flower!](https://cwispy.itch.io/the-quest-for-orions-flower)
+
 ## How To Play/Goal
 Your Goal is to acquire 3 Temple Orbs in order to access the Ancient Temple and Retrieve Orion's Flower. In order to enter the 3 Main Temples, Forest, Snow and Desert. You will need to find the corresponding keys, Each area will have a Key which gives you access to the Temple in that area. Once you enter a Temple, you will need to fight enemies, complete puzzles and kill the boss in order to acquire a Temple Orb. Once you have completed all 3 Temples, you can enter the Ancient Temple and defeat the final boss!
 
