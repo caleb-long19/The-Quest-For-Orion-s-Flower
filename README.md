@@ -1,6 +1,3 @@
-# 2D Unity Project
-This repository's purpose is to contain all different version/builds of my 2D Unity Video Game. Each commit will consist of a list of changes that have been made since the previous upload.
-
 # The Quest For Orion's Flower!
 You play as Clark, A young man who lives with his family in the woods. Whose family has been cursed,. A curse which prevents the family from ever being safe. Monsters roam the areas around them. Clark's Mother and Father informs Clark of the curse put upon them. Clark takes it upon himself to search for Orion's Flower, a magical object which has the power to grant the user a wish. Clark must explore various Temples and find the orbs to give him access to the Ancient Temple and find Orion's Flower.
 
