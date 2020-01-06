@@ -1,5 +1,5 @@
 # The Quest For Orion's Flower!
-You play as Clark, A young man who lives with his family in the woods. Whose family has been cursed,. A curse which prevents the family from ever being safe. Monsters roam the areas around them. Clark's Mother and Father informs Clark of the curse put upon them. Clark takes it upon himself to search for Orion's Flower, a magical object which has the power to grant the user a wish. Clark must explore various Temples and find the orbs to give him access to the Ancient Temple and find Orion's Flower.
+You play as Clark, A young man who lives with his family in the woods, but not long ago the family was cursed. A curse which prevents the family from ever being safe. Monsters roam the areas around them. Clark's Mother and Father informs Clark of the curse put upon them. Clark takes it upon himself to search for Orion's Flower, a magical plant which has the power to grant the user a wish. Clark must explore various Temples and find the orbs to give him access to the Ancient Temple and find Orion's Flower.
 
 ## [Itch.io: The Quest For Orion's Flower!](https://cwispy.itch.io/the-quest-for-orions-flower)
 
@@ -49,11 +49,17 @@ You can acquire Pickups such as Hearts, Shields. These will fill up your Health 
 
 **Enemies** - Defend yourself against multiple enemies such as Slimes, Mummy's, Snowmen, and Skeletons while travelling on your Quest!
 
-# Installation Instructions
+# Itch.io Installation Instructions
 - Download The Quest For Orion's Flower.zip!
 - Unzip Folder Contents to a location of your choosing!
 - Open Unzipped Folder!
 - Run TheQuestForOrionsFlower.exe!
+- Play the game!
+
+# GitHub Installation Instructions
+- Download Alpha Build Folder
+- Open it
+- Run TheQuestForOrionsFlower.exe
 - Play the game!
 
 # Trello Board
@@ -81,5 +87,5 @@ This Trello Dashboard will contain all project development information on the pr
 - Creature-growl01
 
 ### [Monster sounds](https://www.shockwave-sound.com/free-sound-effects/monster-sounds)
-- Zombie Attack
-- Zombie Groan
+- [Zombie Attack](https://www.shockwave-sound.com/sound-effects/monster-sounds/zombie%20attack.wav)
+- [Zombie Groan](https://www.shockwave-sound.com/sound-effects/monster-sounds/zombie%20groan%201.wav)
