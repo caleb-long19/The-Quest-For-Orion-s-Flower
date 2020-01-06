@@ -49,6 +49,13 @@ You can acquire Pickups such as Hearts, Shields. These will fill up your Health 
 
 **Enemies** - Defend yourself against multiple enemies such as Slimes, Mummy's, Snowmen, and Skeletons while travelling on your Quest!
 
+# Installation Instructions
+- Download The Quest For Orion's Flower.zip!
+- Unzip Folder Contents to a location of your choosing!
+- Open Unzipped Folder!
+- Run TheQuestForOrionsFlower.exe!
+- Play the game!
+
 # Trello Board
 This Trello Dashboard will contain all project development information on the project e.g. Asset Implementation, Features, Mechanics, Dates etc. 
 - [Trello - The Quest for Orion's Flower](https://trello.com/b/aG4i8prK/soft166-unity-project-the-quest-for-orions-flower)
