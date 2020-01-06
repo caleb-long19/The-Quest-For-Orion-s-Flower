@@ -87,5 +87,5 @@ This Trello Dashboard will contain all project development information on the pr
 - Creature-growl01
 
 ### [Monster sounds](https://www.shockwave-sound.com/free-sound-effects/monster-sounds)
-- Zombie Attack
-- Zombie Groan
+- [Zombie Attack](https://www.shockwave-sound.com/sound-effects/monster-sounds/zombie%20attack.wav)
+- [Zombie Groan](https://www.shockwave-sound.com/sound-effects/monster-sounds/zombie%20groan%201.wav)
