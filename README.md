@@ -49,11 +49,17 @@ You can acquire Pickups such as Hearts, Shields. These will fill up your Health 
 
 **Enemies** - Defend yourself against multiple enemies such as Slimes, Mummy's, Snowmen, and Skeletons while travelling on your Quest!
 
-# Installation Instructions
+# Itch.io Installation Instructions
 - Download The Quest For Orion's Flower.zip!
 - Unzip Folder Contents to a location of your choosing!
 - Open Unzipped Folder!
 - Run TheQuestForOrionsFlower.exe!
+- Play the game!
+
+# GitHub Installation Instructions
+- Download Alpha Build Folder
+- Open it
+- Run TheQuestForOrionsFlower.exe
 - Play the game!
 
 # Trello Board
