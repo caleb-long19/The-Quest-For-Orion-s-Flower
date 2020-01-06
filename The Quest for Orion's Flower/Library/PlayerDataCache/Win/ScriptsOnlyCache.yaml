@@ -42,10 +42,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -434,7 +432,7 @@ ScriptsOnlyBuild:
     className: SmoothFollow2D
   - hash:
       serializedVersion: 2
-      Hash: fe5fa6458dc7c5f0ac969a22db2298e8
+      Hash: 142b57125b17d55b37af8bfb224969e6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RangedAttack
@@ -662,12 +660,6 @@ ScriptsOnlyBuild:
     className: Coin
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ButtonSound
-  - hash:
-      serializedVersion: 2
       Hash: a5f58ed0e375afcb600294bc0c276a95
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -752,7 +744,7 @@ ScriptsOnlyBuild:
     className: TMP_TextSelector_A
   - hash:
       serializedVersion: 2
-      Hash: 60cd4476b104fe8c68c524556d7eebff
+      Hash: 2a7767d07dcd78b175e571b0565992a3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CrateButton
@@ -794,7 +786,7 @@ ScriptsOnlyBuild:
     className: TMP_TextInfoDebugTool
   - hash:
       serializedVersion: 2
-      Hash: 6e190efc3292f070c7f17063a74e153a
+      Hash: bb99312b1927c09a9e49ccd6488c15f8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TopDownCharacterController2D
@@ -1054,4 +1046,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/OrionFlower.unity
-  playerPath: C:/Users/Caleb Long/Desktop/The Quest For Orion's Flower (ALPHA BUILD))/TheQuestForOrionsFlower.exe
+  playerPath: C:/Users/Caleb Long/Desktop/The Quest For Orion's Flower (New Update)/TheQuestForOrionsFlower.exe

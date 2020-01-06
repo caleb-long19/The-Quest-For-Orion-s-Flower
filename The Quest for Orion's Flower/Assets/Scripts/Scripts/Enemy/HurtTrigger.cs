@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class HurtTrigger : MonoBehaviour
 {
-    public int damage;
-    public float resetTime = 0.25f;
+    public int damage; // Integer value for amount of Damage Enemy Deals
+    public float resetTime = 0.25f; // Reset time for enemies collider when they attack the Player
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

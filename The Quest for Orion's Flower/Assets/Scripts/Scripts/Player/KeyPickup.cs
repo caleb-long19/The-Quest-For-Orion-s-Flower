@@ -5,28 +5,29 @@ using UnityEngine;
 public class KeyPickup : MonoBehaviour
 {
     // Temple Key Bools
-    public static bool ForestKey;
-    public static bool FrostKey;
-    public static bool DesertKey;
+    public static bool ForestKey; // Bool for Forest Temple Key
+    public static bool FrostKey; // Bool for Frost Temple Key
+    public static bool DesertKey; // Bool for Desert Temple Key
 
     // Temple Orb Bools
-    public static bool ForestOrb;
-    public static bool FrostOrb;
-    public static bool DesertOrb;
-    public static bool AllOrbs;
-    public static bool OrionFlower;
+    public static bool ForestOrb; // Bool for Forest Temple Orb
+    public static bool FrostOrb; // Bool for Frost Temple Orb
+    public static bool DesertOrb; // Bool for Desert Temple Orb
+    public static bool AllOrbs; // Bool for all the Temple Orb
+    public static bool OrionFlower; // Bool for Orion's Flower
 
     // Weapon Pickup Bools
-    public static bool BowPickup;
-    public static bool SwordPickup;
+    public static bool BowPickup; // Bool for Bow (Weapon)
+    public static bool SwordPickup; // Bool for Sword (Weapon)
 
     //Unity References
-    public AudioClip Keys;
-    public AudioClip OrbPickup;
-    public AudioClip Pickup;
+    public AudioClip Keys; // Audio Clip for Temple Keys
+    public AudioClip OrbPickup; // Aduio Clip for Temple Orbs
+    public AudioClip Pickup; // Audio Clip for Weapon Pickup
 
     public void Start() // Set all bools to False on Start
     {
+        #region Set all bools to false when game starts
         ForestKey = false;
         FrostKey = false;
         DesertKey = false;
@@ -39,12 +40,12 @@ public class KeyPickup : MonoBehaviour
 
         SwordPickup = false;
         BowPickup = false;
-
+        #endregion
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-
+        #region All Methods For Temple Keys
         // When Player collides with Temple Keys, Remove object, Temple Key Bools are set to True, Play sound effect!
         if (collision.gameObject.tag.Equals("ForestKey"))
         {
@@ -66,7 +67,9 @@ public class KeyPickup : MonoBehaviour
             DesertKey = true; // Desert Key is equal to true
             Destroy(GameObject.FindWithTag("DesertKey")); // Destroy Desert Key
         }
+        #endregion
 
+        #region All Methods for Temple Orbs
         // When Player collides with Temple Orbs, Remove object, Temple Orb Bools are set to True, Play sound effect!
         if (collision.gameObject.tag.Equals("ForestOrb"))
         {
@@ -95,8 +98,9 @@ public class KeyPickup : MonoBehaviour
             OrionFlower = true; // Orion's Flower is equal to true
             Destroy(GameObject.FindWithTag("OrionFlower")); // Destroy Orion's Flower
         }
+        #endregion
 
-
+        #region All Methods for Weapon Pickups
         // When Player Collides with Weapons, Destroy them and set Weapon Bools to true
         if (collision.tag == "Sword")
         {
@@ -112,6 +116,7 @@ public class KeyPickup : MonoBehaviour
             BowPickup = true; // BowPickup bool is set to true
             Destroy(GameObject.FindWithTag("Bow")); // Destroy Bow gameObject
         }
+        #endregion
     }
 
     public void Update()

@@ -4,25 +4,26 @@ using UnityEngine;
 
 public class CrateButton : MonoBehaviour
 {
-    public GameObject Barrier;
-    public AudioSource Press;
+    //GameObjects
+    public GameObject Barrier; // GameObject for Stone Barriers
 
-    public Animator ButtonAnimationController;
+    //Unity References
+    public Animator ButtonAnimationController; // Reference for the Animator Component
 
     void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Crate"))
         {
             Barrier.SetActive(false); // Barrier GameObject is set to Inactive
-            ButtonAnimationController.SetTrigger("isPressed"); // If the Crate collides with the button, switch button to isPressed in the Animator
+            ButtonAnimationController.SetTrigger("isPressed"); // If the Crate collides with the Button, switch button to isPressed in the Animator
 
-            Debug.Log("Crate Button has been Pressed");
+            Debug.Log("Crate Button has been Pressed"); // Display Debug Log in Console
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Barrier.SetActive(true); // Barrier GameObject is set to active
+        Barrier.SetActive(true); // Stone Barrier GameObject is set to active
         ButtonAnimationController.SetTrigger("isNotPressed"); // If the Crate isn't colliding with the button, switch button to isNotPressed in the Animator
     }
 }
