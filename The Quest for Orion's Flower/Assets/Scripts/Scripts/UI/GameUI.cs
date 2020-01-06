@@ -34,7 +34,6 @@ public class GameUI : MonoBehaviour
         shieldBar.value = currentShield; // Shield Bar Slider is equal to Integer Shield
         ammoText.text = "AMMO: " + currentAmmo.ToString(); // Ammo Counter Text is equal to Integer Ammo
         scoreText.text = "SCORE: " + Coin.score.ToString(); // Score Counter Text is equal to Integer Score
-        scoreText.GetComponent<Animator>().Play(0);
         #endregion
 
         #region Player UI Weapon Icon IF Statements
